@@ -1,0 +1,623 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 172
+
+Object Bodypart = 1
+{
+
+	Object 男主角:obj = 2
+	{
+
+		Object 帽子:obj = 141
+		{
+
+			Object 201号帽子:ModuleObj = 142
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里头发:obj = 143
+		{
+
+			Object 201号里头发:ModuleObj = 144
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外头发:obj = 145
+		{
+
+			Object 201号外头发:ModuleObj = 146
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号外头发:ModuleObj = 147
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里衣服:obj = 148
+		{
+
+			Object 201号里衣服:ModuleObj = 149
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号里衣服:ModuleObj = 150
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外衣服:obj = 151
+		{
+
+			Object 201号外衣服:ModuleObj = 152
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号外衣服:ModuleObj = 153
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 全身体:obj = 154
+		{
+
+			Object 201号全身体:ModuleObj = 155
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 左手:obj = 156
+		{
+
+			Object 201号左手:ModuleObj = 157
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号左手:ModuleObj = 158
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手:obj = 159
+		{
+
+			Object 201号右手:ModuleObj = 160
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号右手:ModuleObj = 161
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手装备:obj = 162
+		{
+
+			Object 201号右手装备:ModuleObj = 163
+			{
+				StateFlag = 1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号右手装备:ModuleObj = 164
+			{
+				StateFlag = 1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外鞋子:obj = 165
+		{
+
+			Object 201号外鞋子:ModuleObj = 166
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号外鞋子:ModuleObj = 167
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+	}
+
+	Object 女主角:obj = 30
+	{
+
+		Object 帽子:obj = 31
+		{
+
+			Object 1号帽子:ModuleObj = 32
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号帽子:ModuleObj = 33
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里头发:obj = 34
+		{
+
+			Object 1号里头发:ModuleObj = 35
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号里头发:ModuleObj = 36
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外头发:obj = 37
+		{
+
+			Object 1号外头发:ModuleObj = 38
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号外头发:ModuleObj = 39
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里衣服:obj = 40
+		{
+
+			Object 2号里衣服:ModuleObj = 41
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外衣服:obj = 42
+		{
+
+			Object 1号外衣服:ModuleObj = 43
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 全身体:obj = 44
+		{
+
+			Object 1号全身体:ModuleObj = 45
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 左手:obj = 46
+		{
+
+			Object 1号左手:ModuleObj = 47
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号左手:ModuleObj = 48
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手:obj = 49
+		{
+
+			Object 1号右手:ModuleObj = 50
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号右手:ModuleObj = 51
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手装备:obj = 52
+		{
+
+			Object 1号右手装备:ModuleObj = 53
+			{
+				StateFlag = 1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号右手装备:ModuleObj = 54
+			{
+				StateFlag = 1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 3号右手装备:ModuleObj = 55
+			{
+				StateFlag = 1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外鞋子:obj = 56
+		{
+
+			Object 1号外鞋子:ModuleObj = 57
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号外鞋子:ModuleObj = 58
+			{
+				StateFlag = 1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+	}
+
+	Object 男主角大图:obj = 59
+	{
+
+		Object 帽子:obj = 60
+		{
+
+			Object 201号帽子:ModuleObj = 61
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里头发:obj = 62
+		{
+
+			Object 201号里头发:ModuleObj = 63
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外头发:obj = 64
+		{
+
+			Object 201号外头发:ModuleObj = 65
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号外头发:ModuleObj = 66
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里衣服:obj = 67
+		{
+
+			Object 201号里衣服:ModuleObj = 68
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号里衣服:ModuleObj = 69
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外衣服:obj = 70
+		{
+
+			Object 201号外衣服:ModuleObj = 71
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号外衣服:ModuleObj = 72
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 全身体:obj = 73
+		{
+
+			Object 201号全身体:ModuleObj = 74
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 左手:obj = 75
+		{
+
+			Object 201号左手:ModuleObj = 76
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号左手:ModuleObj = 77
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手:obj = 78
+		{
+
+			Object 201号右手:ModuleObj = 79
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号右手:ModuleObj = 80
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手装备:obj = 82
+		{
+
+			Object 201号右手装备:ModuleObj = 83
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号右手装备:ModuleObj = 140
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外鞋子:obj = 84
+		{
+
+			Object 201号外鞋子:ModuleObj = 85
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 202号外鞋子:ModuleObj = 86
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+	}
+
+	Object 女主角大图:obj = 87
+	{
+
+		Object 帽子:obj = 88
+		{
+
+			Object 1号帽子:ModuleObj = 89
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号帽子:ModuleObj = 90
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里头发:obj = 91
+		{
+
+			Object 1号里头发:ModuleObj = 92
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号里头发:ModuleObj = 93
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外头发:obj = 94
+		{
+
+			Object 1号外头发:ModuleObj = 95
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号外头发:ModuleObj = 96
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 里衣服:obj = 97
+		{
+
+			Object 2号里衣服:ModuleObj = 98
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外衣服:obj = 99
+		{
+
+			Object 1号外衣服:ModuleObj = 100
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 全身体:obj = 101
+		{
+
+			Object 1号全身体:ModuleObj = 102
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 左手:obj = 103
+		{
+
+			Object 1号左手:ModuleObj = 104
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号左手:ModuleObj = 105
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手:obj = 106
+		{
+
+			Object 1号右手:ModuleObj = 107
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号右手:ModuleObj = 108
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 右手装备:obj = 109
+		{
+
+			Object 1号右手装备:ModuleObj = 110
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号右手装备:ModuleObj = 111
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 3号右手装备:ModuleObj = 112
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 外鞋子:obj = 113
+		{
+
+			Object 1号外鞋子:ModuleObj = 114
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号外鞋子:ModuleObj = 115
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+	}
+
+	Object 草地绿怪:obj = 123
+	{
+
+		Object 全身体:obj = 124
+		{
+
+			Object 1号全身体:ModuleObj = 139
+			{
+				StateFlag = 1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+				type1 = 0,-44,0
+				type2 = 0,147,0
+				type3 = 0,-65,3
+			}
+		}
+	}
+
+	Object 近战士兵1:obj = 126
+	{
+
+		Object 全身体:obj = 127
+		{
+
+			Object 1号全身体:ModuleObj = 128
+			{
+				StateFlag = 1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+				type1 = 0,-138,0
+				type2 = 0,-14,0
+			}
+		}
+	}
+
+	Object 远程士兵1:obj = 129
+	{
+
+		Object 全身体:obj = 130
+		{
+
+			Object 1号全身体:ModuleObj = 131
+			{
+				StateFlag = 1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+				type1 = 0,-153,-95
+				type2 = 0,-14,0
+			}
+		}
+	}
+
+	Object 炮塔:obj = 132
+	{
+
+		Object 帽子:obj = 133
+		{
+
+			Object 1号帽子:ModuleObj = 134
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+
+			Object 2号帽子:ModuleObj = 135
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			}
+		}
+
+		Object 全身体:obj = 136
+		{
+
+			Object 1号全身体:ModuleObj = 137
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+				type1 = 0,0,-127
+				type2 = 0,-29,31
+			}
+
+			Object 2号全身体:ModuleObj = 138
+			{
+				StateFlag = 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+				type1 = 0,2,-127
+				type2 = 0,38,0
+			}
+		}
+	}
+
+	Object .svn:obj = 172
+	{
+	}
+}

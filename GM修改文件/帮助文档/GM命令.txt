@@ -1,0 +1,16 @@
+
+玩家GM命令:
+
+禁言：	/shutup1 角色名字 999(小时) 理由
+踢人：	 /kick1 角色名字 理由
+踢人封号有广播	/forceout1 角色名字 封号天 理由
+GM踢人下线封号无广播 / kicknforb 角色ID 封号天 理由
+GM踢人下线封号无广播 / kicknforb1 角色名字 封号天 理由
+
+
+
+API_ActorGoToMap(15304, 110, 503, 441)踢人下线
+API_ActorGoToMap(, 1, 181, 308)
+
+API_ActorGoToMap(, 2, 321, 203)
+API_ActorGoToMap(15492, 10, 178, 310)踢人下线

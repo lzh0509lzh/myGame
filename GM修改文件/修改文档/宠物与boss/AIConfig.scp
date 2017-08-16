@@ -1,0 +1,9666 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 2834             
+
+Object Aiconfig主项1 = 1
+{
+
+	Object 熊灵1级说话 = 1001
+	{
+		Action = 1001
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+	}
+
+	Object 快递任务怪物发广播 = 1002
+	{
+		Action = 1002
+		EvenID = 7
+		S_Blood =                        0,20
+	}
+
+	Object 邮车收到怪物命令停止 = 1003
+	{
+		Action = 1003
+		EvenID = 6
+		O_CommondID = 30001
+	}
+
+	Object 剥皮状态 = 1004
+	{
+		Action = 1004
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 0
+		S_Blood =                        0,0
+	}
+
+	Object 帝国怪物生命低于50%请求加血 = 1005
+	{
+		Action = 1005
+		EvenID = 7
+		S_Blood =                        0,50
+	}
+
+	Object 帝国怪物收到建筑广播后强制攻击建筑 = 1006
+	{
+		Action = 1006
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 30
+		O_CommondID =                        2002,4001
+	}
+
+	Object 帝国怪物收到加血请求后为目标加血 = 1007
+	{
+		Action = 1007
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 4
+		O_CommondID = 50001
+		Rand = 50
+	}
+
+	Object 帝国怪物见到玩家后30%几率冲锋1次 = 1008
+	{
+		Action = 1008
+		DS_Distant =                        3,10
+		D_ObjType = 1
+		EvenID = 8
+		Rand = 30
+	}
+
+	Object 帝国怪物出生后100%几率使用隐身 = 1009
+	{
+		Action = 1009
+		EvenID = 1
+	}
+
+	Object 帝国怪物请求攻击力翻倍 = 1010
+	{
+		Action = 1010
+		EvenID = 4
+		S_NoInStatus = 144
+	}
+
+	Object 帝国加攻兵收到攻击力翻倍请求后为目标加攻 = 1011
+	{
+		Action = 1011
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 3
+		O_CommondID = 50002
+		Rand = 50
+	}
+
+	Object 帝国怪物攻击时20%的几率给自己使用极限速度 = 1012
+	{
+		Action = 1012
+		EvenID = 4
+		Rand = 20
+		S_NoInStatus = 144
+	}
+
+	Object 帝国怪物收到建筑广播后控制建筑 = 1013
+	{
+		Action = 1013
+		D_NoInStatus = 145
+		EvenID = 6
+		O_CommondID =                        2002,4001
+		Rand = 50
+	}
+
+	Object 帝国怪物对玩家使用龙卷风 = 1014
+	{
+		Action = 1014
+		D_NoInStatus = 145
+		EvenID = 8
+		Rand = 10
+	}
+
+	Object 帝国怪物被玩家攻击后强制反击 = 1015
+	{
+		Action = 1006
+		D_ObjType = 1
+		EvenID = 3
+	}
+
+	Object 帝国补血兵搜索需要补血的目标 = 1016
+	{
+		Action = 1015
+		EvenID = 7
+	}
+
+	Object 帝国加攻兵搜索需要加攻击力的目标 = 1017
+	{
+		Action = 1018
+		EvenID = 7
+	}
+
+	Object 帝国怪物搜索联邦建筑 = 1018
+	{
+		Action = 1016
+		EvenID = 7
+	}
+
+	Object 帝国怪物搜索机奴族建筑 = 1019
+	{
+		Action = 1017
+		EvenID = 7
+	}
+
+	Object 帝国狙击手收到联邦电网命令 = 1020
+	{
+		Action = 1019
+		EvenID = 6
+		O_CommondID = 100002
+	}
+
+	Object 帝国卫队长强制攻击玩家 = 1021
+	{
+		Action = 1020
+		D_ObjType = 1
+		EvenID = 3
+		Rand = 40
+	}
+
+	Object 帝国卫队长遇敌释放火药印记 = 1022
+	{
+		Action = 1021
+		D_ObjType =                        1,3
+		EvenID = 8
+		Rand = 50
+	}
+
+	Object 帝国卫队长自爆 = 1023
+	{
+		Action = 1022
+		EvenID = 4
+		Rand = 50
+		S_Blood =                        0,2
+	}
+
+	Object 帝国卫队长免疫炮塔攻击 = 1024
+	{
+		Action = 1023
+		EvenID = 1
+	}
+
+	Object 帝国建筑广播 = 1025
+	{
+		Action = 1024
+		EvenID = 7
+	}
+
+	Object 帝国建筑出生免疫控制 = 1026
+	{
+		Action = 1025
+		EvenID = 1
+	}
+
+	Object 生命之泉出生是给自己加生命之泉状态 = 1027
+	{
+		Action = 1026
+		EvenID = 1
+	}
+
+	Object 建筑出生是给自己加建筑保护状态 = 1028
+	{
+		Action = 1027
+		EvenID = 1
+	}
+
+	Object 帝国狙击手营地收到联邦电网命令 = 1029
+	{
+		Action = 1028
+		EvenID = 6
+		O_CommondID = 100002
+	}
+
+	Object 帝国电网被攻击电击攻击者 = 1030
+	{
+		Action = 1029
+		EvenID = 3
+	}
+
+	Object 帝国电网发布命令 = 1031
+	{
+		Action = 1030
+		EvenID = 7
+	}
+
+	Object 联邦怪物生命低于50%请求加血 = 1032
+	{
+		Action = 1031
+		EvenID = 7
+		S_Blood =                        0,50
+	}
+
+	Object 联邦怪物收到建筑广播后强制攻击建筑 = 1033
+	{
+		Action = 1032
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 30
+		O_CommondID =                        70001,4001
+	}
+
+	Object 联邦怪物收到加血请求后为目标加血 = 1034
+	{
+		Action = 1033
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 4
+		O_CommondID = 80001
+		Rand = 50
+	}
+
+	Object 联邦怪物见到玩家后30%几率冲锋1次 = 1035
+	{
+		Action = 1034
+		DS_Distant =                        3,10
+		D_ObjType = 1
+		EvenID = 8
+		Rand = 30
+	}
+
+	Object 联邦怪物出生后100%几率使用隐身 = 1036
+	{
+		Action = 1035
+		EvenID = 1
+	}
+
+	Object 联邦怪物请求攻击力翻倍 = 1037
+	{
+		Action = 1036
+		EvenID = 4
+		S_NoInStatus = 144
+	}
+
+	Object 联邦加攻兵收到攻击力翻倍请求后为目标加攻 = 1038
+	{
+		Action = 1037
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 5
+		O_CommondID = 80002
+		Rand = 20
+	}
+
+	Object 联邦怪物攻击时20%的几率给自己使用极限速度 = 1039
+	{
+		Action = 1038
+		EvenID = 4
+		Rand = 20
+		S_NoInStatus = 144
+	}
+
+	Object 联邦怪物收到建筑广播后控制建筑 = 1040
+	{
+		Action = 1039
+		D_NoInStatus = 145
+		EvenID = 6
+		O_CommondID =                        70001,4001
+		Rand = 50
+	}
+
+	Object 联邦怪物对玩家使用龙卷风 = 1041
+	{
+		Action = 1040
+		D_NoInStatus = 145
+		EvenID = 8
+		Rand = 10
+	}
+
+	Object 联邦怪物被玩家攻击后强制反击 = 1042
+	{
+		Action = 1032
+		D_ObjType = 1
+		EvenID = 3
+	}
+
+	Object 联邦补血兵搜索需要补血的目标 = 1043
+	{
+		Action = 1041
+		EvenID = 7
+	}
+
+	Object 联邦加攻兵搜索需要加攻击力的目标 = 1044
+	{
+		Action = 1044
+		EvenID = 7
+	}
+
+	Object 联邦怪物搜索帝国建筑 = 1045
+	{
+		Action = 1042
+		EvenID = 7
+	}
+
+	Object 联邦怪物搜索机奴族建筑 = 1046
+	{
+		Action = 1043
+		EvenID = 7
+	}
+
+	Object 联邦狂战士收到帝国电网命令 = 1047
+	{
+		Action = 1045
+		EvenID = 6
+		O_CommondID = 70002
+	}
+
+	Object 联邦魔导士遇敌释放魔法印记 = 1048
+	{
+		Action = 1046
+		D_ObjType =                        1,3
+		EvenID = 8
+		Rand = 50
+	}
+
+	Object 联邦魔导士使用群攻 = 1049
+	{
+		Action = 1047
+		CanUseCount = 2
+		D_NearEnemyNum =                        0,1,3,100
+		EvenID = 4
+		FreezeTime = 10
+		Rand = 20
+	}
+
+	Object 联邦魔导士遇玩家释放恶魔之手 = 1050
+	{
+		Action = 1048
+		D_ObjType = 1
+		EvenID = 8
+		Rand = 30
+	}
+
+	Object 联邦魔导士强制攻击玩家 = 1051
+	{
+		Action = 1049
+		D_ObjType = 1
+		EvenID = 3
+		Rand = 40
+	}
+
+	Object 联邦魔导士免疫炮塔攻击 = 1052
+	{
+		Action = 1050
+		EvenID = 1
+	}
+
+	Object 联邦建筑广播 = 1053
+	{
+		Action = 1051
+		EvenID = 7
+	}
+
+	Object 联邦建筑出生免疫控制 = 1054
+	{
+		Action = 1052
+		EvenID = 1
+	}
+
+	Object 联邦生命之泉出生是给自己加生命之泉状态 = 1055
+	{
+		Action = 1053
+		EvenID = 1
+	}
+
+	Object 联邦建筑出生是给自己加建筑保护状态 = 1056
+	{
+		Action = 1054
+		EvenID = 1
+	}
+
+	Object 联邦机器人工厂收到帝国电网命令 = 1057
+	{
+		Action = 1055
+		EvenID = 6
+		O_CommondID = 70002
+	}
+
+	Object 联邦电网被攻击电击攻击者 = 1058
+	{
+		Action = 1056
+		EvenID = 3
+	}
+
+	Object 联邦电网发布命令 = 1059
+	{
+		Action = 1057
+		EvenID = 7
+	}
+
+	Object 机奴族怪物生命低于50%请求加血 = 1060
+	{
+		Action = 1058
+		EvenID = 7
+		S_Blood =                        0,50
+	}
+
+	Object 机奴族怪物请求攻击力翻倍 = 1061
+	{
+		Action = 1059
+		EvenID = 4
+		S_NoInStatus = 144
+	}
+
+	Object 机奴族怪物收到建筑广播后强制攻击建筑 = 1062
+	{
+		Action = 1066
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 30
+		O_CommondID =                        70001,2002
+	}
+
+	Object 机奴族怪物收到加血请求后为目标加血 = 1063
+	{
+		Action = 1062
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 3
+		O_CommondID = 110001
+		Rand = 50
+	}
+
+	Object 机奴族怪物收到攻击力翻倍请求后为目标加攻 = 1064
+	{
+		Action = 1063
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 4
+		O_CommondID = 110002
+		Rand = 50
+	}
+
+	Object 机奴族怪物收到建筑广播后控制建筑 = 1065
+	{
+		Action = 1064
+		D_NoInStatus = 145
+		EvenID = 6
+		O_CommondID =                        70001,2002
+		Rand = 50
+	}
+
+	Object 机奴族补血兵搜索需要补血的目标 = 1066
+	{
+		Action = 1060
+		EvenID = 7
+	}
+
+	Object 机奴族加攻兵搜索需要加攻击力的目标 = 1067
+	{
+		Action = 1061
+		EvenID = 7
+	}
+
+	Object 机奴族怪物见到玩家后30%几率冲锋1次 = 1068
+	{
+		Action = 1065
+		DS_Distant =                        3,10
+		D_ObjType = 1
+		EvenID = 8
+		Rand = 30
+	}
+
+	Object 机奴族怪物被玩家攻击后强制反击 = 1069
+	{
+		Action = 1066
+		D_ObjType = 1
+		EvenID = 3
+	}
+
+	Object 机奴族怪物出生后100%几率使用隐身 = 1070
+	{
+		Action = 1067
+		EvenID = 1
+	}
+
+	Object 机奴族怪物对玩家使用龙卷风 = 1071
+	{
+		Action = 1068
+		D_NoInStatus = 145
+		EvenID = 8
+		Rand = 10
+	}
+
+	Object 机奴族怪物攻击时20%的几率给自己使用极限速度 = 1072
+	{
+		Action = 1069
+		EvenID = 4
+		Rand = 20
+		S_NoInStatus = 144
+	}
+
+	Object 机奴族怪物搜索联邦建筑 = 1073
+	{
+		Action = 1070
+		EvenID = 7
+	}
+
+	Object 机奴族怪物搜索帝国建筑 = 1074
+	{
+		Action = 1071
+		EvenID = 7
+	}
+
+	Object 生命低于30%有40%几率伤害吸收 = 1075
+	{
+		Action = 1072
+		CanUseCount = 1
+		D_NoInStatus = 55
+		EvenID = 3
+		FreezeTime = 45
+		Rand = 40
+	}
+
+	Object 生命低于40%有40%几率伤害吸收 = 1076
+	{
+		Action = 1072
+		CanUseCount = 1
+		D_NoInStatus = 55
+		EvenID = 3
+		FreezeTime = 45
+		Rand = 40
+		S_Blood =                        0,40
+	}
+
+	Object 生命低于50%有40%几率伤害吸收 = 1077
+	{
+		Action = 1072
+		CanUseCount = 1
+		D_NoInStatus = 55
+		EvenID = 3
+		FreezeTime = 45
+		Rand = 40
+		S_Blood =                        0,50
+	}
+
+	Object 距离4~9有30%几率风暴锤 = 1078
+	{
+		Action = 1073
+		CanUseCount = 1
+		DS_Distant =                        4,9
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 攻击中30%几率免疫伤害 = 1079
+	{
+		Action = 1074
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 30
+		S_NoInStatus = 160
+	}
+
+	Object 距离4~9有30%几率减速 = 1080
+	{
+		Action = 1075
+		DS_Distant =                        4,9
+		EvenID = 3
+		Rand = 30
+	}
+
+	Object 生命低于30%有50%几率狂暴 = 1081
+	{
+		Action = 1076
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		Rand = 50
+		S_Blood =                        0,30
+		S_NoInStatus = 144
+	}
+
+	Object 生命低于40%有10%几率舞刃风暴 = 1082
+	{
+		Action = 1077
+		EvenID = 4
+		Rand = 10
+		S_Blood =                        0,40
+	}
+
+	Object 生命低于30%有10%几率火龙息1级 = 1083
+	{
+		Action = 1078
+		EvenID = 4
+		Rand = 10
+		S_Blood =                        0,30
+	}
+
+	Object 距离4~9有30%几率风暴锤 = 1084
+	{
+		Action = 1073
+		CanUseCount = 1
+		DS_Distant =                        4,9
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 生命低于30%有40%几率伤害吸收 = 1085
+	{
+		Action = 1072
+		CanUseCount = 1
+		D_NoInStatus = 55
+		EvenID = 4
+		FreezeTime = 45
+		Rand = 40
+	}
+
+	Object 生命低于40%有40%几率伤害吸收 = 1086
+	{
+		Action = 1072
+		CanUseCount = 1
+		D_NoInStatus = 55
+		EvenID = 4
+		FreezeTime = 45
+		Rand = 40
+		S_Blood =                        0,40
+	}
+
+	Object 生命低于50%有40%几率伤害吸收 = 1087
+	{
+		Action = 1072
+		CanUseCount = 1
+		D_NoInStatus = 55
+		EvenID = 4
+		FreezeTime = 45
+		Rand = 40
+		S_Blood =                        0,50
+	}
+
+	Object 距离4~9有30%几率减速 = 1088
+	{
+		Action = 1075
+		DS_Distant =                        4,9
+		EvenID = 4
+		Rand = 30
+	}
+
+	Object 生命低于30%有50%几率狂暴 = 1089
+	{
+		Action = 1076
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 50
+		S_Blood =                        0,30
+		S_NoInStatus = 144
+	}
+
+	Object 攻击时20秒一次禁魔 = 1090
+	{
+		Action = 1079
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 被攻击时20秒一次禁魔 = 1091
+	{
+		Action = 1079
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+	}
+
+	Object 攻击时20秒一次变形术 = 1092
+	{
+		Action = 1080
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 被攻击时20秒一次变形术 = 1093
+	{
+		Action = 1080
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+	}
+
+	Object 机奴族BOSS被玩家攻击后强制反击 = 1094
+	{
+		Action = 1081
+		D_ObjType = 1
+		EvenID = 3
+	}
+
+	Object 机奴族建筑广播 = 1095
+	{
+		Action = 1082
+		EvenID = 7
+	}
+
+	Object 机奴族建筑出生免疫控制 = 1096
+	{
+		Action = 1083
+		EvenID = 1
+	}
+
+	Object 熊灵出生说话 = 1097
+	{
+		Action = 1084
+		CanUseCount = 1
+		DS_Distant = 10
+		EvenID = 1
+		FreezeTime = 10
+		Status = 0
+	}
+
+	Object 熊灵事件说话 = 1098
+	{
+		Action = 1086
+		CanUseCount = 1
+		DS_Distant = 10
+		EvenID = 3
+		FreezeTime = 10
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 熊灵事件说话 = 1099
+	{
+		Action = 1086
+		CanUseCount = 1
+		DS_Distant = 10
+		EvenID = 3
+		FreezeTime = 10
+		S_Blood =                        0,40
+		Status = 1
+	}
+
+	Object 熊灵死亡说话 = 1100
+	{
+		Action = 1085
+		CanUseCount = 1
+		DS_Distant = 10
+		EvenID = 2
+		FreezeTime = 10
+		Status = 1
+	}
+
+	Object 血值低于50%时，召唤帮手 = 1101
+	{
+		Action = 1087
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		Rand = 30
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于30%时，自己回血 = 1102
+	{
+		Action = 1088
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		Rand = 30
+		S_Blood =                        0,30
+		Status = 1
+	}
+
+	Object 血值低于10%时，使用狂暴技能 = 1103
+	{
+		Action = 1089
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,10
+		Status = 1
+	}
+
+	Object BOSS被攻击后强行反攻 = 1104
+	{
+		Action = 1090
+		D_ObjType = 1
+		EvenID = 3
+	}
+
+	Object 血值低于90%时候，使用变形术 = 1105
+	{
+		Action = 1100
+		CanUseCount = 1
+		D_NearEnemyNum =                        0,1,3,100
+		D_ObjType = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 5
+		S_Blood =                        0,90
+		Status = 1
+	}
+
+	Object 血值低于70%时候，使用烟幕 = 1106
+	{
+		Action = 1101
+		CanUseCount = 1
+		D_ObjType = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 15
+		S_Blood =                        0,70
+		Status = 1
+	}
+
+	Object 血值低于30%时候，使用挟持 = 1107
+	{
+		Action = 1102
+		CanUseCount = 1
+		D_ObjType = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 5
+		S_Blood =                        0,30
+		Status = 1
+	}
+
+	Object 血值低于10%时候，逃跑 = 1108
+	{
+		Action = 1103
+		EvenID = 3
+		Rand = 40
+		S_Blood =                        0,10
+		Status = 1
+	}
+
+	Object 血值低于50%时候，使用狂暴技能 = 1109
+	{
+		Action = 1089
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 10
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于30%时候，使用图腾 = 1110
+	{
+		Action = 1104
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,30
+		Status = 1
+	}
+
+	Object 血值低于10%时候，使用真龙形态 = 1111
+	{
+		Action = 1105
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		Rand = 30
+		S_Blood =                        0,10
+	}
+
+	Object BOSS请求攻击力翻倍 = 1112
+	{
+		Action = 1116
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 15
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用恶魔赦令 = 1113
+	{
+		Action = 1106
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		Rand = 20
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，使用八方斩 = 1114
+	{
+		Action = 1107
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用恶魔赦令 = 1115
+	{
+		Action = 1108
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		Rand = 20
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，使用八方斩 = 1116
+	{
+		Action = 1109
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用恶魔赦令 = 1117
+	{
+		Action = 1110
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 55
+		Rand = 20
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，使用八方斩 = 1118
+	{
+		Action = 1111
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用恶魔赦令 = 1119
+	{
+		Action = 1112
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 55
+		Rand = 20
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，使用八方斩 = 1120
+	{
+		Action = 1113
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用恶魔赦令 = 1121
+	{
+		Action = 1114
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 55
+		Rand = 20
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，使用八方斩 = 1122
+	{
+		Action = 1115
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用晶体皮肤 = 1123
+	{
+		Action = 1116
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 75
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，给自己回血 = 1124
+	{
+		Action = 1117
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用晶体皮肤 = 1125
+	{
+		Action = 1118
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 75
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，给自己回血 = 1126
+	{
+		Action = 1119
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用晶体皮肤 = 1127
+	{
+		Action = 1120
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 75
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，给自己回血 = 1128
+	{
+		Action = 1121
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用晶体皮肤 = 1129
+	{
+		Action = 1122
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 75
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，给自己回血 = 1130
+	{
+		Action = 1123
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值低于50%时，使用晶体皮肤 = 1131
+	{
+		Action = 1124
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 75
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值低于20%时，给自己回血 = 1132
+	{
+		Action = 1125
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 20
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，伤害吸收 = 1133
+	{
+		Action = 1126
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 30
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用耀辉技能 = 1134
+	{
+		Action = 1127
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 30
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值降低到20%时，使用跳跃魔杀 = 1135
+	{
+		Action = 1128
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，伤害吸收 = 1136
+	{
+		Action = 1129
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 30
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用耀辉技能 = 1137
+	{
+		Action = 1130
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 30
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值降低到20%时，使用跳跃魔杀 = 1138
+	{
+		Action = 1131
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，伤害吸收 = 1139
+	{
+		Action = 1132
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 30
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用耀辉技能 = 1140
+	{
+		Action = 1133
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值降低到20%时，使用跳跃魔杀 = 1141
+	{
+		Action = 1134
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，伤害吸收 = 1142
+	{
+		Action = 1135
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用耀辉技能 = 1143
+	{
+		Action = 1136
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值降低到20%时，使用跳跃魔杀 = 1144
+	{
+		Action = 1137
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，伤害吸收 = 1145
+	{
+		Action = 1138
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用耀辉技能 = 1146
+	{
+		Action = 1139
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值降低到20%时，使用跳跃魔杀 = 1147
+	{
+		Action = 1140
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，使用变身2级技能 = 1148
+	{
+		Action = 1141
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 20
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用冰封路径 = 1149
+	{
+		Action = 1142
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值下降到20%时，使用万火焚身 = 1150
+	{
+		Action = 1143
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，使用变身3级技能 = 1151
+	{
+		Action = 1144
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 20
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用冰封路径 = 1152
+	{
+		Action = 1145
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值下降到20%时，使用万火焚身 = 1153
+	{
+		Action = 1146
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，使用变身4级技能 = 1154
+	{
+		Action = 1147
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 20
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用冰封路径 = 1155
+	{
+		Action = 1148
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值下降到20%时，使用万火焚身 = 1156
+	{
+		Action = 1149
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，使用变身5级技能 = 1157
+	{
+		Action = 1150
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 20
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用冰封路径 = 1158
+	{
+		Action = 1151
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值下降到20%时，使用万火焚身 = 1159
+	{
+		Action = 1152
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值降低到80%时，使用变身7级技能 = 1160
+	{
+		Action = 1153
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 20
+		S_Blood =                        0,80
+		Status = 1
+	}
+
+	Object 血值降低到50%时，使用冰封路径 = 1161
+	{
+		Action = 1154
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 血值下降到20%时，使用万火焚身 = 1162
+	{
+		Action = 1155
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		Rand = 15
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 火女受到火龙息的攻击后，给自己加眩晕4秒的状态 = 1163
+	{
+		Action = 1156
+		EvenID = 7
+		S_Status = 288
+	}
+
+	Object 剑圣试炼兵搜索到生命图腾后对自己使用减速 = 1164
+	{
+		Action = 1157
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 10
+		O_CommondID = 180001
+	}
+
+	Object 枪神试炼兵受到突击射击会被额外扣血 = 1165
+	{
+		Action = 1158
+		EvenID = 7
+		S_Status = 291
+	}
+
+	Object 塔防BOSS抵抗各种不良状态 = 1166
+	{
+		Action = 1159
+		EvenID = 1
+	}
+
+	Object 塔防BOSS使用重压光环技能 = 1167
+	{
+		Action = 1160
+		EvenID = 1
+	}
+
+	Object 塔防BOSS使用棘光环 = 1168
+	{
+		Action = 1161
+		EvenID = 1
+	}
+
+	Object 塔防BOSS使用回血光环 = 1169
+	{
+		Action = 1162
+		EvenID = 1
+	}
+
+	Object 塔防BOSS使用物理反弹技能 = 1170
+	{
+		Action = 1163
+		EvenID = 1
+	}
+
+	Object "墙，发布""我是墙，是一个不可逾越的障碍物的命令" = 1171
+	{
+		Action = 1164
+		EvenID = 7
+	}
+
+	Object "飞行BOSS收到""我是墙""命令" = 1172
+	{
+		Action = 1165
+		EvenID = 6
+		O_CommondID = 140001
+	}
+
+	Object 隐型NPC搜索挂接跳跃命令 = 1173
+	{
+		Action = 1166
+		EvenID = 7
+		O_CommondID = 150001
+	}
+
+	Object "市民发布""我是大大的良民""" = 1174
+	{
+		Action = 1167
+		EvenID = 7
+	}
+
+	Object "怪物搜索""市民命令""" = 1175
+	{
+		Action = 1168
+		D_MstID =                        11125,11126
+		D_ObjType = 4
+		EvenID = 8
+	}
+
+	Object 怪物在生命低于50%时，有25%几率给自己回血 = 1176
+	{
+		Action = 1169
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		Rand = 15
+		S_Blood =                        0,50
+		Status = 1
+	}
+
+	Object 怪物在生命低于30%时，挂节请求加血命令 = 1177
+	{
+		Action = 1170
+		EvenID = 7
+	}
+
+	Object "怪物搜索""我是贫血""命令" = 1178
+	{
+		Action = 1171
+		EvenID = 6
+		O_CommondID = 170001
+	}
+
+	Object 怪物血值低于30%时使用吼叫技能 = 1179
+	{
+		Action = 1172
+		EvenID = 3
+		S_Blood =                        0,30
+	}
+
+	Object 怪物血值低于30%时使用狮子吼技能 = 1180
+	{
+		Action = 1173
+		EvenID = 3
+		S_Blood =                        0,30
+	}
+
+	Object 骑士使用无敌buff = 1181
+	{
+		Action = 1174
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 10
+		Rand = 5
+		Status = 1
+	}
+
+	Object 天生的隐身 = 1182
+	{
+		Action = 1175
+		EvenID = 1
+	}
+
+	Object 新手能源恢复泉 = 1183
+	{
+		Action = 1176
+		EvenID = 1
+	}
+
+	Object 传送门状态 = 1184
+	{
+		Action = 1177
+		EvenID = 1
+	}
+
+	Object 市民遇到怪物逃跑 = 1185
+	{
+		Action = 1178
+		EvenID = 7
+	}
+
+	Object BOSS范围自杀攻击 = 1186
+	{
+		Action = 1179
+		D_MstID =                        11125,11126
+		D_ObjType = 4
+		EvenID = 8
+	}
+
+	Object 市民被塔防怪物攻击后说话 = 1187
+	{
+		Action = 1180
+		CanUseCount = 1
+		DS_Distant = 10
+		EvenID = 8
+		FreezeTime = 10
+		Status =                        0,1
+	}
+
+	Object 男爵生命恢复泉 = 1188
+	{
+		Action = 1181
+		EvenID = 1
+	}
+
+	Object 塔防炮塔给自己加持反隐身状态 = 1189
+	{
+		Action = 1182
+		EvenID = 1
+	}
+
+	Object 熊灵给自己加进度条 = 1190
+	{
+		Action = 1183
+		EvenID = 1
+	}
+
+	Object 塔防传送点说话 = 1191
+	{
+		Action = 1184
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 城堡被攻击后发出敌袭警报 = 1192
+	{
+		Action = 1185
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 5
+	}
+
+	Object 浮空岛防守传送门说话 = 1193
+	{
+		Action = 1186
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 浮空岛拉锯传送门说话 = 1194
+	{
+		Action = 1187
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 10
+	}
+
+	Object 浮空岛塔防传送门说话 = 1195
+	{
+		Action = 1188
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 浮空岛争夺传送门说话 = 1196
+	{
+		Action = 1189
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 1宠物说话 = 1197
+	{
+		Action = 1190
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 90
+		Rand = 30
+	}
+
+	Object 2宠物说话 = 1198
+	{
+		Action = 1191
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 90
+		Rand = 30
+	}
+
+	Object 3宠物说话 = 1199
+	{
+		Action = 1192
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 90
+		Rand = 30
+	}
+
+	Object 控制类BOSS逃跑 = 1200
+	{
+		Action = 1178
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 20
+		S_Blood =                        0,30
+	}
+
+	Object 炮塔回血技能 = 1201
+	{
+		Action = 1193
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 5
+		Status =                        0,1
+	}
+
+	Object 交通警察 = 1202
+	{
+		Action = 1194
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		Rand = 80
+	}
+
+	Object 训练营传送门说话 = 1203
+	{
+		Action = 1195
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object BOSS使用狂暴 = 1204
+	{
+		Action = 1076
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 当血值下降到80%以后使用群体击退晕眩 = 1205
+	{
+		Action =                        1197,1196
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 180
+		S_Blood =                        0,80
+	}
+
+	Object 当血值下降到40%以后使用恶魔赦令 = 1206
+	{
+		Action = 1114
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		S_Blood =                        0,40
+	}
+
+	Object 当血值下降到20%以后使用剧毒新星 = 1207
+	{
+		Action = 1198
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,20
+	}
+
+	Object 物理BOSS出生说话 = 1208
+	{
+		Action = 1199
+		EvenID = 1
+	}
+
+	Object 每一分钟使用一次晶体皮肤 = 1209
+	{
+		Action = 1124
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 当血值下降到80%以后使用闪烁攻击 = 1210
+	{
+		Action = 1200
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 150
+		S_Blood =                        0,80
+	}
+
+	Object 当血值下降到40%以后进入狂暴并使用舞刃风暴 = 1211
+	{
+		Action =                        1089,1077
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		S_Blood =                        0,40
+	}
+
+	Object 当血值下降到20%以后使用肢解并使用重压光环 = 1212
+	{
+		Action =                        1160,1201
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,20
+	}
+
+	Object 每一分钟使用一次极限速度 = 1213
+	{
+		Action = 1202
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 当血值下降到80%以后使用烟幕和舞刃风暴 = 1214
+	{
+		Action =                        1101,1077
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 180
+		S_Blood =                        0,80
+	}
+
+	Object 当血值下降到40%以后使用伤害吸收和肢解 = 1215
+	{
+		Action =                        1072,1201
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		S_Blood =                        0,40
+	}
+
+	Object 当血值下降到20%以后使用范围晕眩和八方斩 = 1216
+	{
+		Action =                        1197,1109
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,20
+	}
+
+	Object BOSS范围攻击小兵 = 1217
+	{
+		Action = 1203
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 1
+		S_Blood =                        0,1
+	}
+
+	Object 火药BOSS出生说话 = 1218
+	{
+		Action = 1204
+		EvenID = 1
+	}
+
+	Object 1分钟用一次重压光环 = 1219
+	{
+		Action = 1160
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 当血值下降到80%以后使用群体破甲 = 1220
+	{
+		Action = 1205
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 30
+		S_Blood =                        0,80
+	}
+
+	Object 当血值下降到40%以后狙击 = 1221
+	{
+		Action = 1206
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 30
+		S_Blood =                        0,40
+	}
+
+	Object 当血值下降到20%以后使用范围晕眩和八方斩 = 1222
+	{
+		Action =                        1197,1115
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,20
+	}
+
+	Object 1分钟使用一次晶体皮肤 = 1223
+	{
+		Action = 1116
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 血值下降到80%的时候灼烧 = 1224
+	{
+		Action = 1207
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 30
+		S_Blood =                        0,80
+	}
+
+	Object 40%的时候使用群体缴械 = 1225
+	{
+		Action = 1208
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 30
+		S_Blood =                        0,40
+	}
+
+	Object 20%的时候使用跳跃杀魔和晶体皮肤 = 1226
+	{
+		Action =                        1128,1116
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,20
+	}
+
+	Object 1分钟使用一次自然迅捷 = 1227
+	{
+		Action = 1209
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 80%的时候使用自然迅捷和大地之怒 = 1228
+	{
+		Action =                        1209,1210
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 30
+		S_Blood =                        0,80
+	}
+
+	Object 40%的时候使用群体缴械和真龙形态 = 1229
+	{
+		Action =                        1208,1211
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 30
+		S_Blood =                        0,40
+	}
+
+	Object 20%群体破甲和真龙形态 = 1230
+	{
+		Action =                        1205,1212
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,20
+	}
+
+	Object 魔法出生说话 = 1231
+	{
+		Action = 1213
+		EvenID = 1
+	}
+
+	Object 1分钟使用一次重压光环 = 1232
+	{
+		Action = 1160
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 80%的时候使用群体变羊 = 1233
+	{
+		Action = 1214
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		S_Blood =                        0,80
+	}
+
+	Object 40%洗礼和变羊 = 1234
+	{
+		Action =                        1117,1100
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 30
+		S_Blood =                        0,40
+	}
+
+	Object 20%能量吞噬和万火焚身 = 1235
+	{
+		Action =                        1215,1216
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,20
+	}
+
+	Object 1分钟使用1次晶体皮肤 = 1236
+	{
+		Action = 1116
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 80%的使用灼烧和洗礼 = 1237
+	{
+		Action =                        1207,1117
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 30
+		S_Blood =                        0,80
+	}
+
+	Object 40%能量吞噬和舞刃风暴 = 1238
+	{
+		Action =                        1215,1077
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 30
+		S_Blood =                        0,40
+	}
+
+	Object 20%冰峰和暗影之刃 = 1239
+	{
+		Action =                        1217,1218
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,20
+	}
+
+	Object 1分钟使用1次伤害吸收 = 1240
+	{
+		Action = 1072
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 80%的时候使用冲击波和大地之怒 = 1241
+	{
+		Action =                        1219,1210
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		Rand = 30
+		S_Blood =                        0,80
+	}
+
+	Object 40%的时候使用冰峰路径和冲击波 = 1242
+	{
+		Action =                        1151,1219
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 30
+		S_Blood =                        0,40
+	}
+
+	Object 20%的时候使用能量吞噬和巨毒新星 = 1243
+	{
+		Action =                        1215,1220
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 30
+		S_Blood =                        0,20
+	}
+
+	Object 控制技能免疫状态 = 1244
+	{
+		Action = 1221
+		EvenID = 1
+	}
+
+	Object 剑圣1 = 1245
+	{
+		Action =                        1077,1104
+		D_ObjType = 1
+		D_Status = 280
+		EvenID = 3
+		Status = 1
+	}
+
+	Object 剑圣2 = 1246
+	{
+		Action = 1076
+		D_ObjType = 1
+		D_Status = 285
+		EvenID = 3
+		Status = 1
+	}
+
+	Object 剑圣3 = 1247
+	{
+		Action = 1107
+		D_ObjType = 1
+		D_Status = 286
+		EvenID = 3
+		Status = 1
+	}
+
+	Object 火枪1 = 1248
+	{
+		Action =                        1222,1223
+		D_ObjType = 1
+		D_Status = 290
+		EvenID = 3
+		Status = 1
+	}
+
+	Object 火枪2 = 1249
+	{
+		Action =                        1224,1206
+		D_ObjType = 1
+		D_Status = 291
+		EvenID = 3
+		Status = 1
+	}
+
+	Object 火女1 = 1250
+	{
+		Action =                        1219,1078
+		D_ObjType = 1
+		D_Status = 288
+		EvenID = 3
+		Status = 1
+	}
+
+	Object 火女2 = 1251
+	{
+		Action =                        1202,1217
+		D_ObjType = 1
+		D_Status = 289
+		EvenID = 3
+		Status = 1
+	}
+
+	Object BOSS的反隐形状态 = 1252
+	{
+		Action = 1182
+		EvenID = 1
+	}
+
+	Object 联邦节拍器说话1 = 1253
+	{
+		Action = 1225
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 联邦节拍器说话2 = 1254
+	{
+		Action = 1226
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 联邦节拍器说话3 = 1255
+	{
+		Action = 1227
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 联邦节拍器说话4 = 1256
+	{
+		Action = 1228
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 联邦节拍器说话5 = 1257
+	{
+		Action = 1229
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 帝国节拍器说话1 = 1258
+	{
+		Action = 1230
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 帝国节拍器说话2 = 1259
+	{
+		Action = 1231
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 帝国节拍器说话3 = 1260
+	{
+		Action = 1232
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 帝国节拍器说话4 = 1261
+	{
+		Action = 1233
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object 帝国节拍器说话5 = 1262
+	{
+		Action = 1234
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,30
+	}
+
+	Object BOSS被攻击后进入战斗状态 = 1263
+	{
+		Action = 1235
+		EvenID = 3
+	}
+
+	Object BOSS判断自己是否处于战斗状态 = 1264
+	{
+		Action = 1236
+		EvenID = 7
+		S_Blood =                        0,99
+		S_NoInStatus = 97
+	}
+
+	Object 难民抵抗蛊惑 = 1270
+	{
+		Action =                        1300,1310
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		Rand = 10
+		S_Status = 124
+		Status =                        0,1
+	}
+
+	Object 难民逃跑 = 1271
+	{
+		Action =                        1301,1309
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 30
+		S_Blood =                        0,30
+		Status = 1
+	}
+
+	Object 难民气息 = 1272
+	{
+		Action = 1305
+		EvenID = 1
+		FreezeTime = 60
+	}
+
+	Object 俘虏抵抗叛变 = 1273
+	{
+		Action =                        1300,1310
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 80
+		S_Status = 124
+		Status =                        0,1
+	}
+
+	Object 俘虏逃跑 = 1274
+	{
+		Action =                        1301,1309
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 俘虏抵抗晕眩 = 1275
+	{
+		Action =                        1302,1306
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 10
+		S_Status = 288
+		Status = 1
+	}
+
+	Object 俘虏抵抗变羊 = 1276
+	{
+		Action =                        1303,1307
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 10
+		S_Status = 303
+		Status = 1
+	}
+
+	Object 俘虏抵抗狙击击退 = 1277
+	{
+		Action =                        1304,1308
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 10
+		S_Status = 291
+		Status = 1
+	}
+
+	Object 巡逻兵反隐形侦察 = 1278
+	{
+		Action = 1182
+		EvenID = 1
+	}
+
+	Object 初级巡逻兵遇敌报警 = 1279
+	{
+		CanUseCount = 1
+		EvenID = 8
+		FreezeTime = 50
+		Rand = 10
+		Status =                        0,1
+	}
+
+	Object 中级巡逻兵遇敌报警 = 1280
+	{
+		CanUseCount = 1
+		EvenID = 8
+		FreezeTime = 30
+		Rand = 40
+		Status =                        0,1
+	}
+
+	Object 初级巡逻兵抵抗蛊惑 = 1281
+	{
+		Action =                        1300,1310
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 80
+		S_Status = 124
+		Status =                        0,1
+	}
+
+	Object 中级巡逻兵抵抗蛊惑 = 1282
+	{
+		Action =                        1300,1310
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 50
+		S_Status = 124
+		Status =                        0,1
+	}
+
+	Object 高级巡逻兵逃跑 = 1283
+	{
+		Action =                        1301,1309
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 50
+		S_Blood =                        0,50
+	}
+
+	Object 高级巡逻兵抵抗蛊惑 = 1284
+	{
+		Action =                        1300,1310
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 10
+		Rand = 80
+		S_Status = 124
+		Status =                        0,1
+	}
+
+	Object 高级巡逻兵遇敌警报 = 1285
+	{
+		EvenID = 8
+	}
+
+	Object 巡逻队长抵抗蛊惑 = 1286
+	{
+		Action =                        1300,1310
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		Rand = 90
+		S_Status = 124
+		Status =                        0,1
+	}
+
+	Object 主抗眩晕 = 1287
+	{
+		Action =                        1302,1306
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 90
+		S_Status = 288
+		Status = 1
+	}
+
+	Object 主抗变羊 = 1288
+	{
+		Action =                        1303,1307
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 90
+		S_Status = 303
+		Status = 1
+	}
+
+	Object 主抗击退 = 1289
+	{
+		Action =                        1304,1308
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 90
+		S_Status = 291
+		Status = 1
+	}
+
+	Object 副抗眩晕 = 1290
+	{
+		Action =                        1302,1306
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 45
+		S_Status = 288
+		Status = 1
+	}
+
+	Object 副抗变羊 = 1291
+	{
+		Action =                        1303,1307
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 45
+		S_Status = 303
+		Status = 1
+	}
+
+	Object 副抗击退 = 1292
+	{
+		Action =                        1304,1308
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 45
+		S_Status = 291
+		Status = 1
+	}
+
+	Object 街机召唤物理兵 = 1293
+	{
+		Action =                        1314,1320,1321,1366
+		CanUseCount = 1
+		EvenID = 8
+		FreezeTime = 30
+	}
+
+	Object 街机召唤火药兵 = 1294
+	{
+		Action =                        1315,1367
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		S_NoInStatus = 105
+		Status = 1
+	}
+
+	Object 街机召唤魔法兵 = 1295
+	{
+		Action =                        1316,1368
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		S_NoInStatus = 106
+		Status = 1
+	}
+
+	Object 街机召唤物理兵 = 1296
+	{
+		Action =                        1314,1366
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		S_NoInStatus = 104
+		Status = 1
+	}
+
+	Object 街机免疫物理状态 = 1297
+	{
+		Action =                        1317,1320,1321,1322,1323
+		CanUseCount = 1
+		EvenID = 8
+		FreezeTime = 50
+	}
+
+	Object 街机免疫火药状态 = 1298
+	{
+		Action = 1318
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 100
+		S_NoInStatus = 105
+		Status = 1
+	}
+
+	Object 街机免疫魔法状态 = 1299
+	{
+		Action = 1319
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 100
+		S_NoInStatus = 106
+		Status = 1
+	}
+
+	Object 街机物理免疫状态 = 1300
+	{
+		Action = 1317
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 100
+		S_NoInStatus = 104
+		Status = 1
+	}
+
+	Object 嘲讽 = 1301
+	{
+		CanUseCount = 1
+		EvenID = 8
+		FreezeTime = 30
+	}
+
+	Object PW禁咒 = 1302
+	{
+		Action = 1215
+		CanUseCount = 1
+		D_ObjType = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 物理无敌 = 1303
+	{
+		Action = 1317
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+	}
+
+	Object 火药无敌 = 1304
+	{
+		Action = 1318
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+	}
+
+	Object 魔法无敌 = 1305
+	{
+		Action = 1319
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+	}
+
+	Object 给主人加血 = 1306
+	{
+		Action = 1007
+		CanUseCount = 1
+		D_Hp =                        0,99
+		EvenID = 7
+		FreezeTime = 30
+	}
+
+	Object 给自己加血 = 1307
+	{
+		Action = 1088
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		S_Blood =                        0,60
+	}
+
+	Object 攻击力翻倍 = 1308
+	{
+		Action = 1089
+		CanUseCount = 1
+		D_ObjType = 3
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 30
+		Status = 1
+	}
+
+	Object 火枪兵使用突击射击 = 1309
+	{
+		Action = 1329
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+		Rand = 1
+		Status = 1
+	}
+
+	Object 撤离战场 = 1310
+	{
+		Action = 1301
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		Rand = 20
+		S_Status = 349
+	}
+
+	Object 图腾兵鼓惑抵抗 = 1311
+	{
+		Action = 1300
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 5
+		Rand = 80
+		S_Status = 124
+	}
+
+	Object 联邦工程兵搜索联邦建筑 = 1312
+	{
+		Action = 1330
+		EvenID = 7
+	}
+
+	Object 帝国工程兵搜索帝国建筑 = 1313
+	{
+		Action = 1331
+		EvenID = 7
+	}
+
+	Object 机奴工程兵搜索机奴建筑 = 1314
+	{
+		Action = 1332
+		EvenID = 7
+	}
+
+	Object 联邦工程兵搜索到建筑后对血值低于100%的建筑进行修复 = 1315
+	{
+		Action = 1333
+		CanUseCount = 1
+		D_Hp =                        0,99
+		EvenID = 6
+		FreezeTime = 20
+		O_CommondID = 100001
+	}
+
+	Object 帝国工程兵搜索到建筑后对血值低于100%的建筑进行修复 = 1316
+	{
+		Action = 1333
+		CanUseCount = 1
+		D_Hp =                        0,99
+		EvenID = 6
+		FreezeTime = 20
+		O_CommondID = 70001
+	}
+
+	Object 机奴工程兵搜索到建筑后对血值低于100%的建筑进行修复 = 1317
+	{
+		Action = 1333
+		CanUseCount = 1
+		D_Hp =                        0,99
+		EvenID = 6
+		FreezeTime = 20
+		O_CommondID = 130001
+	}
+
+	Object 联邦爆破兵搜索到建筑后进行建筑爆破 = 1318
+	{
+		Action =                        1396,1334
+		CanUseCount = 1
+		D_ObjType = 3
+		EvenID = 6
+		FreezeTime = 30
+		O_CommondID =                        70001,130001
+	}
+
+	Object 帝国爆破兵搜索到建筑后进行建筑爆破 = 1319
+	{
+		Action =                        1396,1334
+		CanUseCount = 1
+		D_ObjType = 3
+		EvenID = 6
+		FreezeTime = 30
+		O_CommondID =                        10001,130001
+	}
+
+	Object 机奴爆破兵搜索到建筑后进行建筑爆破 = 1320
+	{
+		Action =                        1396,1334
+		CanUseCount = 1
+		D_ObjType = 3
+		EvenID = 6
+		FreezeTime = 5
+		O_CommondID =                        70001,100001
+	}
+
+	Object 图腾挂接我是图腾命令 = 1321
+	{
+		Action = 1335
+		EvenID = 7
+	}
+
+	Object 牧师搜索图腾命令 = 1322
+	{
+		Action = 1336
+		EvenID = 7
+	}
+
+	Object 牧师发现图腾后进行攻击 = 1323
+	{
+		Action = 1337
+		EvenID = 6
+		O_CommondID = 160001
+	}
+
+	Object 牧师使用牧师祈祷之言 = 1324
+	{
+		Action = 1338
+		EvenID = 7
+		Rand = 20
+	}
+
+	Object 联邦牧师使用牧师的怜悯 = 1325
+	{
+		Action = 1339
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 50
+		O_CommondID = 80001
+	}
+
+	Object 帝国牧师使用牧师的怜悯 = 1326
+	{
+		Action = 1339
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 50
+		O_CommondID = 50001
+	}
+
+	Object 机奴牧师使用牧师的怜悯 = 1327
+	{
+		Action = 1339
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 50
+		O_CommondID = 110001
+	}
+
+	Object 牧师给玩家使用治疗术 = 1328
+	{
+		Action = 1340
+		CanUseCount = 1
+		D_Hp =                        0,60
+		D_ObjType = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 牧师给玩家每隔一分钟使用一次牧师祷告 = 1329
+	{
+		Action = 1341
+		CanUseCount = 1
+		D_ObjType = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 减速装置 = 1330
+	{
+		Action =                        1342,1533
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 15
+	}
+
+	Object 无敌装置 = 1331
+	{
+		Action =                        1343,1534
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 15
+	}
+
+	Object 血到80%时候说话 = 1332
+	{
+		Action = 1344
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		S_Blood =                        0,80
+	}
+
+	Object 血值50%的时候说话 = 1333
+	{
+		Action = 1345
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		S_Blood =                        0,50
+	}
+
+	Object 血值20%的时候说话 = 1334
+	{
+		Action = 1346
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		S_Blood =                        0,20
+	}
+
+	Object 血值到20%时候说话 = 1335
+	{
+		Action = 1347
+		D_Hp =                        0,20
+		EvenID = 3
+	}
+
+	Object 骑士物理系伤害免疫 = 1336
+	{
+		Action = 1348
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 30
+	}
+
+	Object 骑士火药系伤害免疫 = 1337
+	{
+		Action = 1349
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 30
+	}
+
+	Object 骑士魔法系伤害免疫 = 1338
+	{
+		Action = 1350
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 30
+	}
+
+	Object 骑士每1分钟有40%的几率使用群体破甲 = 1339
+	{
+		Action = 1205
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+		Rand = 60
+	}
+
+	Object 骑士给自己加物火免疫 = 1340
+	{
+		Action =                        1348,1349
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 15
+	}
+
+	Object 骑士给自己加物魔免疫 = 1341
+	{
+		Action =                        1348,1350
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 15
+	}
+
+	Object 骑士给自己加火魔免疫 = 1342
+	{
+		Action =                        1349,1350
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 15
+	}
+
+	Object 骑士三系伤害免役 = 1343
+	{
+		Action =                        1348,1349,1350
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		Rand = 5
+	}
+
+	Object 5号街机BOSS被攻击之后，给自己加一个3分钟的记时状态 = 1344
+	{
+		Action = 1351
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 180
+	}
+
+	Object 5号BOSS5分钟后进入狂暴秒杀状态 = 1345
+	{
+		Action = 1352
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_NoInStatus = 122
+	}
+
+	Object 6号BOSS使用群体钩子和范围减速 = 1346
+	{
+		Action =                        1354,1342
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 180
+	}
+
+	Object 妖言惑众 = 1347
+	{
+		Action =                        1353,1347
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 抵抗妖言 = 1348
+	{
+		Action = 1300
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+	}
+
+	Object 减速装置说话 = 1349
+	{
+		Action = 1356
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 无敌装置说话 = 1350
+	{
+		Action = 1355
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 可破坏的门 = 1351
+	{
+		Action = 1357
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 机关门1 = 1352
+	{
+		Action = 1358
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 黑门 = 1353
+	{
+		Action = 1359
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 红门 = 1354
+	{
+		Action = 1360
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 机关门2 = 1355
+	{
+		Action = 1361
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 引导者 = 1356
+	{
+		Action = 1365
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 80
+	}
+
+	Object 物理范围无敌 = 1357
+	{
+		Action = 1369
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+	}
+
+	Object 火药范围无敌 = 1358
+	{
+		Action = 1370
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+	}
+
+	Object 魔法范围无敌 = 1359
+	{
+		Action = 1371
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+	}
+
+	Object 物火范围无敌 = 1360
+	{
+		Action =                        1369,1370
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+	}
+
+	Object 物魔范围无敌 = 1361
+	{
+		Action =                        1369,1371
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+	}
+
+	Object 火魔范围无敌 = 1362
+	{
+		Action =                        1370,1371
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+	}
+
+	Object 三系无敌 = 1363
+	{
+		Action =                        1369,1371,1370
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 240
+	}
+
+	Object 怪物使用暴头 = 1364
+	{
+		Action = 1372
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 30
+	}
+
+	Object 怪物使用突击射击 = 1365
+	{
+		Action = 1329
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 40
+		Status = 1
+	}
+
+	Object 目标血值低于40%时，使用狙击 = 1366
+	{
+		Action = 1206
+		CanUseCount = 1
+		D_Hp =                        0,40
+		D_ObjType =                        1,6,5
+		EvenID = 4
+		FreezeTime = 40
+		Rand = 40
+		Status = 1
+	}
+
+	Object 怪物攻击时使用恶魔慑令 = 1367
+	{
+		Action = 1106
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 50
+	}
+
+	Object 怪物使用轰击锤 = 1368
+	{
+		Action = 1373
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		Rand = 30
+	}
+
+	Object 怪物使用生命图腾 = 1369
+	{
+		Action = 1104
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 怪物使用眩晕陷阱 = 1370
+	{
+		Action = 1374
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+		Rand = 30
+	}
+
+	Object 血值下降到50%之后使用火龙息 = 1371
+	{
+		Action = 1078
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 60
+		S_Blood =                        0,50
+	}
+
+	Object 怪物使用恶魔守卫 = 1372
+	{
+		Action = 1087
+		EvenID = 4
+		FreezeTime = 40
+		Rand = 40
+	}
+
+	Object 每分钟使用一次使用一次攻击力翻倍 = 1373
+	{
+		Action = 1382
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 怪物使用八方斩 = 1374
+	{
+		Action = 1107
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		Rand = 40
+	}
+
+	Object 月之守护使用单体钩子 = 1375
+	{
+		Action = 1380
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 祭祀典礼 = 1376
+	{
+		Action =                        1381,1375
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 门三说话 = 1377
+	{
+		Action = 1377
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		Rand = 50
+	}
+
+	Object 监狱打手说话 = 1378
+	{
+		Action = 1378
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 小怪死亡爆破 = 1379
+	{
+		Action = 1383
+		EvenID = 3
+	}
+
+	Object 机关门 = 1380
+	{
+		Action = 1387
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 锁匠 = 1381
+	{
+		Action = 1388
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 首领门 = 1382
+	{
+		Action = 1389
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 使用暗影之刃时 = 1383
+	{
+		Action =                        1382,1088
+		CanUseCount = 1
+		D_SkillID = 56
+		EvenID = 5
+		FreezeTime = 15
+	}
+
+	Object 使用涂毒时 = 1384
+	{
+		Action =                        1415,1220
+		EvenID = 3
+		S_Status = 33
+	}
+
+	Object 使用瘟疫守卫时 = 1385
+	{
+		Action =                        1425,1104
+		CanUseCount = 1
+		D_MstID =                        2090,2091,2092,2093,2094,2095,2096,2097,2098,2099,2100,2101,2102,2103,2104,2105,2106,2107,2108,2109
+		EvenID = 3
+		FreezeTime = 15
+	}
+
+	Object 使用剧毒新星时 = 1386
+	{
+		Action =                        1417,1220,1220,1220
+		EvenID = 3
+		S_Status = 332
+	}
+
+	Object 塔防BOSS免疫重压光环 = 1387
+	{
+		Action = 1441
+		EvenID = 1
+	}
+
+	Object 使用舞刃风暴时 = 2000
+	{
+		Action =                        1329,1215,1076,1200
+		CanUseCount = 1
+		D_SkillID = 4
+		EvenID = 5
+		FreezeTime = 15
+	}
+
+	Object 使用生命图腾时 = 2001
+	{
+		Action =                        1337,1169,1379
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 20
+		O_CommondID = 180001
+	}
+
+	Object 使用狂暴时 = 2002
+	{
+		Action = 1373
+		D_Status = 285
+		EvenID = 4
+	}
+
+	Object 使用八方斩时 = 2003
+	{
+		Action =                        1314,1315,1316
+		CanUseCount = 1
+		D_SkillID = 7
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 80
+	}
+
+	Object 搜索生命图腾 = 2004
+	{
+		Action = 1385
+		EvenID = 7
+	}
+
+	Object 生命图腾发布命令 = 2005
+	{
+		Action = 1384
+		EvenID = 7
+	}
+
+	Object 使用闪烁攻击时 = 2006
+	{
+		Action =                        1314,1315,1102,1366
+		CanUseCount = 1
+		D_SkillID = 20
+		EvenID = 5
+		FreezeTime = 15
+	}
+
+	Object 使用真空斩时 = 2007
+	{
+		Action =                        1142,13901390,1390
+		CanUseCount = 1
+		D_SkillID = 21
+		EvenID = 5
+		FreezeTime = 15
+	}
+
+	Object 使用烟幕时 = 2008
+	{
+		Action =                        1079,1415,1391
+		EvenID = 7
+		S_Status = 298
+	}
+
+	Object 使用潜行时 = 2009
+	{
+		Action =                        1200,1200,1200
+		D_Status = 299
+		EvenID = 7
+	}
+
+	Object 天生具有反隐身能力 = 2010
+	{
+		Action = 1182
+		EvenID = 1
+	}
+
+	Object 使用恶魔之手时 = 2011
+	{
+		Action =                        1317,1318,1319,1215,1315,1316
+		CanUseCount = 1
+		D_SkillID = 32
+		EvenID = 5
+		FreezeTime = 40
+	}
+
+	Object 使用恶魔赦令时 = 2012
+	{
+		Action =                        1116,1390,1390,1390
+		D_SkillID = 33
+		EvenID = 5
+	}
+
+	Object 使用晶体皮肤时 = 2013
+	{
+		Action = 1205
+		CanUseCount = 1
+		D_Status = 308
+		EvenID = 4
+		FreezeTime = 10
+	}
+
+	Object 使用肢解时 = 2014
+	{
+		Action =                        1318,1201,1201,1392
+		EvenID = 7
+		S_Status = 309
+	}
+
+	Object 当怪物被熊灵攻击时 = 2015
+	{
+		Action =                        1066,1366
+		CanUseCount = 1
+		D_ObjType = 5
+		EvenID = 3
+		FreezeTime = 40
+	}
+
+	Object 使用厚皮术时 = 2016
+	{
+		Action =                        1382,1340
+		D_Status = 310
+		EvenID = 3
+	}
+
+	Object 使用自然迅捷时 = 2017
+	{
+		Action =                        1393,1209,1209
+		D_Status = 349
+		EvenID = 3
+	}
+
+	Object 使用巨熊形态时 = 2018
+	{
+		Action =                        1395,1214,1394
+		CanUseCount = 1
+		D_Status = 312
+		EvenID = 3
+		FreezeTime = 10
+	}
+
+	Object 爆破兵自爆 = 2019
+	{
+		Action =                        1022,1397
+		EvenID = 3
+		S_Blood =                        0,90
+	}
+
+	Object 爆破兵说话 = 2020
+	{
+		Action = 1398
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 人质1 = 2021
+	{
+		Action = 1399
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 人质2 = 2022
+	{
+		Action = 1400
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+		S_Status = 304
+	}
+
+	Object 人质3 = 2023
+	{
+		Action = 1401
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+		S_Blood =                        0,50
+	}
+
+	Object 卫队长，魔导士攻击时对白1 = 2024
+	{
+		Action = 1402
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 卫队长，魔导士攻击时对白2 = 2025
+	{
+		Action = 1403
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 卫队长，魔导士HP低于20%时说话1 = 2026
+	{
+		Action = 1404
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 10
+		S_Blood =                        0,20
+	}
+
+	Object 卫队长，魔导士HP低于20%时说话2 = 2027
+	{
+		Action = 1405
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 40
+		Rand = 10
+		S_Blood =                        0,20
+	}
+
+	Object 财奴对白1 = 2028
+	{
+		Action = 1406
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 财奴对白2 = 2029
+	{
+		Action = 1407
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+		S_Blood =                        0,20
+	}
+
+	Object 巨龙攻击玩家时随机对白1 = 2030
+	{
+		Action = 1410
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 巨龙攻击玩家时随机对白2 = 2031
+	{
+		Action = 1411
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 巨龙攻击玩家时随机对白3 = 2032
+	{
+		Action = 1412
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 巨龙攻击肉饼时对白1 = 2033
+	{
+		Action = 1408
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 巨龙攻击肉饼时对白2 = 2034
+	{
+		Action = 1409
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 雕像说话1 = 2035
+	{
+		Action = 1413
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 30
+		S_Blood =                        0,64
+	}
+
+	Object 雕像说话2 = 2036
+	{
+		Action = 1414
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		Rand = 30
+		S_Blood =                        0,20
+	}
+
+	Object 肉饼 = 2037
+	{
+		Action = 1418
+		EvenID = 7
+	}
+
+	Object 巨龙搜索肉饼 = 2038
+	{
+		Action = 1419
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+	}
+
+	Object 巨龙搜索到肉饼说话 = 2039
+	{
+		Action =                        1420,1421
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 5
+		O_CommondID = 200001
+	}
+
+	Object 监狱长说话1 = 2040
+	{
+		Action = 1422
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 监狱长说话2 = 2041
+	{
+		Action = 1423
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		Rand = 10
+	}
+
+	Object 监狱长使用挟持 = 2042
+	{
+		Action = 1102
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		Rand = 20
+	}
+
+	Object 监狱打手和警卫的说话 = 2043
+	{
+		Action = 1424
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 15
+		Rand = 30
+	}
+
+	Object 物防削弱装置 = 2044
+	{
+		Action = 1426
+		EvenID = 7
+	}
+
+	Object 火防消弱装置 = 2045
+	{
+		Action = 1427
+		EvenID = 7
+	}
+
+	Object 魔防削弱装置 = 2046
+	{
+		Action = 1428
+		EvenID = 7
+	}
+
+	Object 取散装置 = 2047
+	{
+		Action = 1429
+		EvenID = 7
+	}
+
+	Object 无疤者型搜索物防削弱装置 = 2048
+	{
+		EvenID = 7
+	}
+
+	Object 无疤者型搜索火防削弱装置 = 2049
+	{
+		EvenID = 7
+	}
+
+	Object 无疤者型搜索魔防削弱装置 = 2050
+	{
+		EvenID = 7
+	}
+
+	Object 无疤者型搜索取散装置 = 2051
+	{
+		EvenID = 7
+	}
+
+	Object 无疤者型搜索物防削弱装置后，给自己加物防削弱状态 = 2052
+	{
+		Action = 1434
+		EvenID = 6
+		O_CommondID = 200002
+	}
+
+	Object 无疤者型搜索火防削弱装置后，给自己加火防削弱状态 = 2053
+	{
+		Action = 1435
+		EvenID = 6
+		O_CommondID = 200003
+	}
+
+	Object 无疤者型搜索魔防削弱装置后，给自己加魔防削弱状态 = 2054
+	{
+		Action = 1436
+		EvenID = 6
+		O_CommondID = 200004
+	}
+
+	Object 无疤者型搜索驱散装置后，给自己加驱散状态 = 2055
+	{
+		Action = 1437
+		EvenID = 6
+		O_CommondID = 200005
+	}
+
+	Object 人质挂节命令 = 2056
+	{
+		Action = 1438
+		EvenID = 7
+	}
+
+	Object 搜索人质命令 = 2057
+	{
+		Action = 1439
+		EvenID = 7
+	}
+
+	Object 强攻人质 = 2058
+	{
+		Action = 1440
+		D_MstID =                        269700,269701,269702,269703,269704,269705,269706,269707,269708,269709,269710
+		EvenID = 6
+		O_CommondID = 200006
+	}
+
+	Object 特雷西每分钟使用1次爆头 = 2059
+	{
+		Action = 1223
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 特雷西每分钟30%几率使用穿刺射击 = 2060
+	{
+		Action = 1222
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 30
+	}
+
+	Object 特雷西每3分钟50%几率范围加伤害减少 = 2061
+	{
+		EvenID = 4
+	}
+
+	Object 给自己的小兵加伤害减弱状态 = 2062
+	{
+		Action = 1442
+		EvenID = 1
+	}
+
+	Object 机奴族怪物收到建筑广播后强制攻击建筑 = 2063
+	{
+		Action = 1066
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 30
+		O_CommondID =                        70001,2002
+	}
+
+	Object 4号BOSS说话 = 2064
+	{
+		Action = 1376
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 20
+	}
+
+	Object BOSS脱离战斗回血 = 2065
+	{
+		Action = 1236
+		EvenID = 9
+	}
+
+	Object 单体禁魔 = 2066
+	{
+		Action = 1079
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+	}
+
+	Object 能量吞噬和舞刃风暴 = 2067
+	{
+		Action =                        1215,1077
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,30
+	}
+
+	Object 50%血以下时每12秒使用一次闪烁攻击 = 2068
+	{
+		Action =                        1200,1449
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 12
+		S_Blood =                        0,50
+	}
+
+	Object 5%血以下时施放自暴攻击 = 2069
+	{
+		Action =                        1443,1450
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,5
+	}
+
+	Object 50%血以下每20秒使用一次极限速度 = 2070
+	{
+		Action =                        1202,1451
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,50
+	}
+
+	Object 每35秒一次，恶魔之手拉人 = 2071
+	{
+		Action = 1354
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 35
+	}
+
+	Object 舞刃风暴 = 2072
+	{
+		Action =                        1077,1452
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 37
+	}
+
+	Object 每秒使用一次隐身 = 2073
+	{
+		Action = 1175
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Status =                        0,1
+	}
+
+	Object 使用狙击 = 2074
+	{
+		Action =                        1206,1453
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 63
+	}
+
+	Object 每30秒一次女王架临 = 2075
+	{
+		Action = 1444
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 玩家人数大于5时使用叫我女王 = 2076
+	{
+		Action =                        1445,1454
+		CanUseCount = 1
+		D_NearEnemyNum =                        0,2,5,30
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 每30秒一次真空刺，被攻击的玩家移动速度减少50% = 2077
+	{
+		Action =                        1390,1393,1455
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 每45秒一次AT力场，并带有减速20%效果 = 2078
+	{
+		Action =                        1446,1393,1456
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 45
+	}
+
+	Object 每45秒一次天谴 = 2079
+	{
+		Action =                        1447,1457
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 45
+	}
+
+	Object 20%血时施放一个移动速度和攻击速度+30%的技能，同时攻击力加强150%，防御力降低50%，一直持续到BOSS死亡 = 2080
+	{
+		Action =                        1202,1382,1382,1382,1458
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,20
+	}
+
+	Object 被攻击的时候有一定几率使用狂暴 = 2081
+	{
+		Action = 1076
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 60
+	}
+
+	Object 当怪物血值下降到50%后使用加血图腾 = 2082
+	{
+		Action = 1467
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 35
+		Rand = 80
+		S_Blood =                        0,50
+	}
+
+	Object 每过1分钟攻击增加25% = 2083
+	{
+		Action = 1382
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+	}
+
+	Object 出生使用野蛮打击 = 2084
+	{
+		Action = 1468
+		EvenID = 1
+	}
+
+	Object 猎手之魂 = 2085
+	{
+		Action = 1469
+		EvenID = 4
+	}
+
+	Object 天生使用虚弱光环 = 2086
+	{
+		Action = 1470
+		EvenID = 1
+	}
+
+	Object 小兵召唤 = 2087
+	{
+		Action =                        1316,1460
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,30
+		Status = 1
+	}
+
+	Object 极限速度 = 2088
+	{
+		Action = 1202
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 45
+	}
+
+	Object 伤害翻倍 = 2089
+	{
+		Action =                        1382,1461
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+		Rand = 80
+	}
+
+	Object 伤害翻倍 = 2090
+	{
+		Action =                        1382,1462
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+		Rand = 80
+	}
+
+	Object 跳跃魔杀 = 2091
+	{
+		Action =                        1128,1465
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 小小兵召唤 = 2092
+	{
+		Action =                        1314,1315,1466
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 300
+		Rand = 60
+	}
+
+	Object 卫队长，魔导士攻击时对白1 = 2093
+	{
+		Action = 1402
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		Rand = 10
+	}
+
+	Object 卫队长，魔导士攻击时对白2 = 2094
+	{
+		Action = 1403
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 10
+	}
+
+	Object 卫队长，魔导士攻击时对白1 = 2095
+	{
+		Action = 1402
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		Rand = 10
+	}
+
+	Object 卫队长，魔导士攻击时对白2 = 2096
+	{
+		Action = 1403
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 35
+		Rand = 10
+	}
+
+	Object BOSS搜索建筑 = 2097
+	{
+		Action = 1070
+		EvenID = 7
+		S_Blood =                        0,10
+	}
+
+	Object BOSS搜索建筑 = 2098
+	{
+		Action = 1071
+		EvenID = 7
+		S_Blood =                        0,10
+	}
+
+	Object BOSS攻击建筑 = 2099
+	{
+		Action =                        1066,1210
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 3
+		O_CommondID =                        70001,100001
+		S_Blood =                        0,10
+	}
+
+	Object 自身攻击提升25% = 2100
+	{
+		Action = 1382
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10000
+		S_Blood =                        0,70
+	}
+
+	Object 血值到40%时候，隐身并对单体目标使用伤害30％忽视防御 = 2101
+	{
+		Action =                        1175,1501
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 180
+		S_Blood =                        0,40
+		Status = 1
+	}
+
+	Object 血值到20%时候，隐身并对单体目标使用伤害30％忽视防御 = 2102
+	{
+		Action =                        1175,1501
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 180
+		S_Blood =                        0,20
+		Status = 1
+	}
+
+	Object 血值下降到5%的时候 = 2103
+	{
+		Action =                        1301,1157,1033
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 180
+		S_Blood =                        0,5
+		Status = 1
+	}
+
+	Object 50%几率对回血玩家进行伤害30％技能忽视防御 = 2104
+	{
+		Action = 1501
+		CanUseCount = 1
+		DS_Distant =                        1,5
+		D_ObjType = 1
+		D_Status = 32
+		EvenID = 4
+		FreezeTime = 180
+		S_NearEnemyNum =                        0,1,5,10
+		Status = 1
+	}
+
+	Object 80%几率对回血玩家进行伤害30％忽视防御 = 2105
+	{
+		Action = 1501
+		CanUseCount = 1
+		DS_Distant =                        1,8
+		D_Status = 32
+		EvenID = 4
+		FreezeTime = 180
+		S_NearEnemyNum =                        0,1,10,100
+	}
+
+	Object 范围眩晕 = 2106
+	{
+		Action =                        1196,1201,1201
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 180
+		S_Blood =                        0,60
+	}
+
+	Object 范围眩晕 = 2107
+	{
+		Action =                        1196,1201,1201
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 180
+		S_Blood =                        0,40
+	}
+
+	Object 血值降低到240%时，自己无敌20秒 = 2108
+	{
+		Action = 1174
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,99
+	}
+
+	Object 回血50%，会被打断 = 2109
+	{
+		Action =                        1473,1475,1530
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 9000
+		S_Blood =                        19,20
+	}
+
+	Object 自己加控制免疫 = 2111
+	{
+		Action = 1221
+		EvenID = 7
+		S_NoInStatus = 181
+	}
+
+	Object 去掉自己的控制免疫 = 2112
+	{
+		Action = 1474
+		EvenID = 7
+		S_Status = 181
+	}
+
+	Object 出生使用，使用辐射护甲 = 2113
+	{
+		Action = 1480
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 70
+	}
+
+	Object 血值下降到80的时候使用范围眩晕 = 2114
+	{
+		Action = 1196
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 50
+		S_Blood =                        0,80
+	}
+
+	Object 血值下降到60%时候使用群体变羊 = 2115
+	{
+		Action = 1214
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,60
+	}
+
+	Object 血值下降到20%时候使用群体挟持加召唤 = 2116
+	{
+		Action =                        1208,1484,1485
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,20
+	}
+
+	Object 80%时候反伤护甲 = 2117
+	{
+		Action =                        1481,1483,1483
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,80
+	}
+
+	Object 60%时候反伤护甲和流星雨 = 2118
+	{
+		Action =                        1481,1478,1483
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,60
+	}
+
+	Object 40%时候反伤护甲和流星雨 = 2119
+	{
+		Action =                        1481,1478,1483
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,40
+	}
+
+	Object 20%时候反伤护甲和BOSS吸血 = 2120
+	{
+		Action =                        1481,1477
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		S_Blood =                        0,20
+	}
+
+	Object 当血值下降到80%时候，攻击提升25% = 2121
+	{
+		Action = 1382
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 80
+		S_Blood =                        0,80
+	}
+
+	Object 血值下降到60时候，使用BOSS吸血 = 2122
+	{
+		Action = 1477
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,60
+	}
+
+	Object 血值下降到40时候，使用BOSS吸血 = 2123
+	{
+		Action = 1477
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,40
+	}
+
+	Object 血值下降到20%时候，对加血目标使用对单体伤害30％技能忽视防御 = 2124
+	{
+		Action =                        1501,1486
+		CanUseCount = 1
+		D_Status = 30
+		EvenID = 3
+		FreezeTime = 80
+		S_Blood =                        0,20
+	}
+
+	Object 出生时，释放群体破甲以及辐射守护 = 2125
+	{
+		Action =                        1205,1480
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 60
+	}
+
+	Object 80%时候，使用范围禁魔 = 2126
+	{
+		Action =                        1479,1215
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,80
+	}
+
+	Object 60%时候，对加血目标进行单体伤害30％技能忽视防御 = 2127
+	{
+		Action =                        1501,1486
+		CanUseCount = 1
+		D_Status = 30
+		EvenID = 3
+		FreezeTime = 120
+		S_Blood =                        0,60
+	}
+
+	Object 40%时候，使用强力治疗 = 2128
+	{
+		Action =                        1473,1475,1530
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 9000
+		S_Blood =                        39,40
+	}
+
+	Object 沙虫逃跑 = 2129
+	{
+		Action =                        1157,1301,1215,1088
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 120
+		S_Blood =                        0,20
+	}
+
+	Object 敏系隐身1 = 2130
+	{
+		Action = 1009
+		EvenID = 1
+		Rand = 10
+	}
+
+	Object 敏系撕裂1 = 2131
+	{
+		Action = 1495
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 2
+		Rand = 15
+	}
+
+	Object 刺杀1 = 2132
+	{
+		Action = 1496
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 10
+	}
+
+	Object 敏系隐身2 = 2133
+	{
+		Action = 1009
+		EvenID = 1
+		Rand = 20
+	}
+
+	Object 敏系撕裂2 = 2134
+	{
+		Action = 1495
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 2
+		Rand = 30
+	}
+
+	Object 刺杀2 = 2135
+	{
+		Action = 1496
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 30
+	}
+
+	Object 敏系隐身3 = 2136
+	{
+		Action = 1009
+		EvenID = 1
+		Rand = 80
+	}
+
+	Object 敏系撕裂3 = 2137
+	{
+		Action = 1495
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 2
+		Rand = 60
+	}
+
+	Object 战士破甲1 = 2138
+	{
+		Action =                        1205,1503
+		EvenID = 1
+		FreezeTime = 1
+		Rand = 15
+	}
+
+	Object 战士重击1 = 2139
+	{
+		Action =                        1497,1504
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 5
+		Rand = 1
+	}
+
+	Object 震退1 = 2140
+	{
+		Action =                        1498,1505
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 7
+		Rand = 10
+	}
+
+	Object 战士破甲2 = 2141
+	{
+		Action =                        1205,1503
+		EvenID = 1
+		Rand = 25
+	}
+
+	Object 战士重击2 = 2142
+	{
+		Action =                        1497,1504
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 5
+		Rand = 5
+	}
+
+	Object 震退2 = 2143
+	{
+		Action =                        1498,1505
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 6
+		Rand = 20
+	}
+
+	Object 战士破甲3 = 2144
+	{
+		Action =                        1205,1503
+		EvenID = 1
+		Rand = 80
+	}
+
+	Object 战士重击3 = 2145
+	{
+		Action =                        1073,1504
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 5
+		Rand = 8
+	}
+
+	Object 能量吞噬1 = 2146
+	{
+		Action = 1215
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 10
+	}
+
+	Object 天堑1 = 2147
+	{
+		Action = 1488
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 25
+	}
+
+	Object 能量吞噬2 = 2148
+	{
+		Action = 1215
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 20
+	}
+
+	Object 天堑2 = 2149
+	{
+		Action = 1488
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 50
+	}
+
+	Object 万火焚身 = 2150
+	{
+		Action = 1143
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		Rand = 10
+	}
+
+	Object 能量吞噬2 = 2151
+	{
+		Action = 1215
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 30
+	}
+
+	Object 天堑2 = 2152
+	{
+		Action = 1488
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 60
+	}
+
+	Object 万火焚身 = 2153
+	{
+		Action = 1143
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		Rand = 30
+	}
+
+	Object 加血1 = 2154
+	{
+		Action = 1062
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 2
+		O_CommondID = 110001
+		Rand = 40
+	}
+
+	Object 减速图腾1 = 2155
+	{
+		Action = 1489
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 3
+		Rand = 10
+	}
+
+	Object 加血2 = 2156
+	{
+		Action = 1062
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 2
+		O_CommondID = 110001
+		Rand = 70
+	}
+
+	Object 减速图腾2 = 2157
+	{
+		Action = 1489
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 3
+		Rand = 20
+	}
+
+	Object 护甲图腾1 = 2158
+	{
+		Action = 1490
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 20
+	}
+
+	Object 加血3 = 2159
+	{
+		Action = 1062
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 2
+		O_CommondID = 110001
+		Rand = 90
+	}
+
+	Object 减速图腾3 = 2160
+	{
+		Action = 1489
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 30
+	}
+
+	Object 护甲图腾2 = 2161
+	{
+		Action = 1490
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 30
+	}
+
+	Object 能量图腾 = 2162
+	{
+		Action = 1491
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 30
+	}
+
+	Object 生命图腾 = 2163
+	{
+		Action = 1467
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 20
+	}
+
+	Object 点射1 = 2164
+	{
+		Action = 1492
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 20
+	}
+
+	Object 扫射1 = 2165
+	{
+		Action = 1222
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 10
+	}
+
+	Object 点射2 = 2166
+	{
+		Action = 1492
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 40
+	}
+
+	Object 扫射2 = 2167
+	{
+		Action = 1222
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 25
+	}
+
+	Object 狂暴攻击1 = 2168
+	{
+		Action = 1499
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 8
+	}
+
+	Object 点射3 = 2169
+	{
+		Action = 1492
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 30
+	}
+
+	Object 扫射3 = 2170
+	{
+		Action = 1222
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 20
+	}
+
+	Object 狂暴攻击2 = 2171
+	{
+		Action = 1499
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 15
+	}
+
+	Object 狙击1 = 2172
+	{
+		Action =                        1500,1502
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 10
+	}
+
+	Object 狙击2 = 2173
+	{
+		Action =                        1500,1502
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 4
+		Rand = 30
+	}
+
+	Object 狙击3 = 2174
+	{
+		Action =                        1500,1502
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		Rand = 60
+	}
+
+	Object 辐射护甲1 = 2175
+	{
+		Action = 1480
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 8
+	}
+
+	Object 变羊1 = 2176
+	{
+		Action = 1080
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		Rand = 5
+	}
+
+	Object 辐射护甲2 = 2177
+	{
+		Action = 1480
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 15
+	}
+
+	Object 群体变羊1 = 2178
+	{
+		Action = 1214
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		Rand = 8
+	}
+
+	Object 群体禁魔1 = 2179
+	{
+		Action = 1479
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		Rand = 10
+	}
+
+	Object 辐射护甲3 = 2180
+	{
+		Action = 1480
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3
+		Rand = 40
+	}
+
+	Object 群体变羊2 = 2181
+	{
+		Action = 1214
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 6
+		Rand = 10
+	}
+
+	Object 群体禁魔2 = 2182
+	{
+		Action = 1479
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		Rand = 30
+	}
+
+	Object 怪物逃跑 = 2183
+	{
+		Action = 1506
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+		Rand = 5
+	}
+
+	Object 载具说话 = 2184
+	{
+		Action = 1509
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 50
+	}
+
+	Object 载具说话 = 2185
+	{
+		Action = 1510
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 载具说话 = 2186
+	{
+		Action = 1511
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 20
+	}
+
+	Object 背剑使者:魔剑形态 = 2189
+	{
+		Action = 1514
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 65
+		S_Blood =                        0,85
+	}
+
+	Object 背剑使者:魔剑形态 = 2190
+	{
+		Action = 1514
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 70
+		S_Blood =                        0,70
+	}
+
+	Object 背剑使者:魔剑形态 = 2191
+	{
+		Action = 1514
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 75
+		S_Blood =                        0,55
+	}
+
+	Object 背剑使者:魔剑形态 = 2192
+	{
+		Action = 1514
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 80
+		S_Blood =                        0,40
+	}
+
+	Object 背剑使者:魔剑形态 = 2193
+	{
+		Action = 1514
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 85
+		S_Blood =                        0,25
+	}
+
+	Object 背剑使者:魔剑形态 = 2194
+	{
+		Action = 1514
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 90
+		S_Blood =                        0,10
+	}
+
+	Object 背剑使者:地狱瘴气 = 2195
+	{
+		Action = 1513
+		EvenID = 1
+	}
+
+	Object 背剑使者:地狱瘴气 = 2196
+	{
+		Action = 1513
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 120
+		S_NoInStatus = 172
+	}
+
+	Object 背剑使者:血腥屠戮 = 2197
+	{
+		Action = 1515
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 15
+		S_Blood =                        0,40
+		S_NearEnemyNum =                        0,1,12,100
+	}
+
+	Object 背剑使者:暴风剑阵 = 2198
+	{
+		Action = 1516
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		S_NearEnemyNum =                        0,2,15,100
+	}
+
+	Object 铁甲巨龙:单体变羊 = 2199
+	{
+		Action = 1080
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		Rand = 40
+		S_Blood =                        70,100
+	}
+
+	Object 铁甲巨龙:双重吐息 = 2200
+	{
+		Action = 1516
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		S_Blood =                        70,100
+	}
+
+	Object 铁甲巨龙:威龙震击 = 2201
+	{
+		Action = 1517
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        40,69
+	}
+
+	Object 铁甲巨龙:呼啸钢爪 = 2202
+	{
+		Action = 1518
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		Rand = 40
+		S_Blood =                        40,69
+	}
+
+	Object 铁甲巨龙:能量吞噬 = 2203
+	{
+		Action = 1215
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		S_Blood =                        40,69
+	}
+
+	Object 铁甲巨龙:龙之暴怒 = 2204
+	{
+		Action = 1519
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 25
+		Rand = 70
+		S_Blood =                        0,39
+	}
+
+	Object 铁甲巨龙:威龙震击 = 2205
+	{
+		Action = 1517
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		Rand = 80
+		S_Blood =                        0,39
+		S_NearEnemyNum =                        0,1,12,100
+	}
+
+	Object 铁甲巨龙:物理单体免役 = 2206
+	{
+		Action = 1348
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 50
+	}
+
+	Object 铁甲巨龙:龙鳞守护 = 2207
+	{
+		Action = 1520
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_NearEnemyNum =                        0,2,15,100
+	}
+
+	Object 蝙蝠祭祀:恶灵契约 = 2208
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 360
+		Rand = 60
+		S_Blood =                        0,90
+	}
+
+	Object 蝙蝠祭祀:恶灵契约 = 2209
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 360
+		Rand = 70
+		S_Blood =                        0,80
+	}
+
+	Object 蝙蝠祭祀:恶灵契约 = 2210
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 360
+		Rand = 80
+		S_Blood =                        0,70
+	}
+
+	Object 蝙蝠祭祀:恶灵契约 = 2211
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 360
+		Rand = 90
+		S_Blood =                        0,60
+	}
+
+	Object 蝙蝠祭祀:恶灵契约 = 2212
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,50
+	}
+
+	Object 蝙蝠祭祀:恶灵契约 = 2213
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		S_Blood =                        0,30
+	}
+
+	Object 蝙蝠祭祀:恶灵契约 = 2214
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,20
+	}
+
+	Object 蝙蝠祭祀:血印召唤禁魔 = 2215
+	{
+		Action = 1529
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+		Rand = 60
+		S_Blood =                        41,70
+	}
+
+	Object 蝙蝠祭祀:血印召唤禁魔 = 2216
+	{
+		Action = 1529
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+		Rand = 70
+		S_Blood =                        11,40
+	}
+
+	Object 蝙蝠祭祀:血印召唤禁魔 = 2217
+	{
+		Action = 1529
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+		Rand = 80
+		S_Blood =                        0,10
+	}
+
+	Object 蝙蝠祭祀:怨灵转化 = 2218
+	{
+		Action =                        1473,1475,1530
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 800
+		S_Blood =                        0,5
+	}
+
+	Object 蝙蝠祭祀:战略撤退 = 2219
+	{
+		Action = 1103
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 10
+		S_Blood =                        0,2
+		S_NearEnemyNum =                        0,1,5,8
+	}
+
+	Object 死亡骑士:疯狂狙击 = 2220
+	{
+		Action = 1500
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 360
+		Rand = 60
+		S_Blood =                        0,85
+	}
+
+	Object 死亡骑士:疯狂狙击 = 2221
+	{
+		Action = 1500
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 360
+		Rand = 65
+		S_Blood =                        0,70
+	}
+
+	Object 死亡骑士:疯狂狙击 = 2222
+	{
+		Action = 1500
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 360
+		Rand = 70
+		S_Blood =                        0,55
+	}
+
+	Object 死亡骑士:疯狂狙击 = 2223
+	{
+		Action = 1500
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 360
+		Rand = 75
+		S_Blood =                        0,40
+	}
+
+	Object 死亡骑士:疯狂狙击 = 2224
+	{
+		Action = 1500
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 360
+		Rand = 80
+		S_Blood =                        0,35
+	}
+
+	Object 死亡骑士:疯狂狙击 = 2225
+	{
+		Action = 1500
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 360
+		Rand = 90
+		S_Blood =                        0,5
+	}
+
+	Object 死亡骑士:恶灵契约 = 2226
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 2
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,80
+	}
+
+	Object 死亡骑士:恶灵契约 = 2227
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 2
+		EvenID = 3
+		FreezeTime = 40
+		S_Blood =                        0,60
+	}
+
+	Object 死亡骑士:恶灵契约 = 2228
+	{
+		Action =                        1526,1527,1528
+		CanUseCount = 2
+		EvenID = 3
+		FreezeTime = 20
+		S_Blood =                        0,20
+	}
+
+	Object 豹的速度 = 2229
+	{
+		Action =                        1531,1321
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		S_NearEnemyNum =                        0,2,15,100
+	}
+
+	Object 去掉豹的速度 = 2230
+	{
+		Action = 1532
+		EvenID = 7
+		S_NoInStatus = 105
+		S_Status = 118
+	}
+
+	Object 机甲变身 = 2231
+	{
+		Action = 1535
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        20,100
+	}
+
+	Object 机体变身 = 2232
+	{
+		Action = 1535
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		S_Blood =                        0,20
+	}
+
+	Object 机体践踏 = 2233
+	{
+		Action = 1536
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        20,100
+	}
+
+	Object 机体践踏 = 2234
+	{
+		Action = 1536
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		S_Blood =                        0,20
+	}
+
+	Object 炸弹装置1 = 2235
+	{
+		Action = 1537
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+		S_Blood =                        20,100
+	}
+
+	Object 炸弹装置1b = 2236
+	{
+		Action = 1537
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 3
+		S_Blood =                        0,20
+	}
+
+	Object 炸弹装置2 = 2237
+	{
+		Action = 1538
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+		S_Blood =                        20,100
+	}
+
+	Object 炸弹装置2b = 2238
+	{
+		Action = 1538
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 3
+		S_Blood =                        0,20
+	}
+
+	Object 炸弹装置3 = 2239
+	{
+		Action = 1539
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+		S_Blood =                        20,100
+	}
+
+	Object 炸弹装置3b = 2240
+	{
+		Action = 1539
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 3
+		S_Blood =                        0,20
+	}
+
+	Object 烈炎诅咒1级 = 2241
+	{
+		Action = 1540
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 15
+	}
+
+	Object 烈炎诅咒2级 = 2242
+	{
+		Action = 1541
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 15
+	}
+
+	Object 烈炎诅咒3级 = 2243
+	{
+		Action = 1542
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 15
+	}
+
+	Object 凤凰点头1级 = 2244
+	{
+		Action = 1543
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        10,100
+	}
+
+	Object 凤凰点头1级b = 2245
+	{
+		Action = 1543
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 8
+		S_Blood =                        0,10
+	}
+
+	Object 凤凰点头2级 = 2246
+	{
+		Action = 1544
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        10,100
+	}
+
+	Object 凤凰点头2级b = 2247
+	{
+		Action = 1544
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 8
+		S_Blood =                        0,10
+	}
+
+	Object 凤凰点头3级 = 2248
+	{
+		Action = 1545
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        10,100
+	}
+
+	Object 凤凰点头3级b = 2249
+	{
+		Action = 1545
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 8
+		S_Blood =                        0,10
+	}
+
+	Object 自然之助 = 2250
+	{
+		Action = 1546
+		EvenID = 1
+	}
+
+	Object 时装说话1 = 2252
+	{
+		Action = 1548
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 20
+	}
+
+	Object 时装说话2 = 2253
+	{
+		Action = 1549
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 20
+	}
+
+	Object 时装说话3 = 2254
+	{
+		Action = 1550
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 20
+	}
+
+	Object 时装说话4 = 2255
+	{
+		Action = 1551
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 20
+	}
+
+	Object 真视之眼天生隐身 = 2256
+	{
+		Action = 1552
+		EvenID = 1
+	}
+
+	Object 时装说话5 = 2257
+	{
+		Action = 1553
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 10
+		Rand = 30
+	}
+
+	Object 时装说话6 = 2258
+	{
+		Action = 1554
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 15
+		Rand = 25
+	}
+
+	Object 时装说话7 = 2259
+	{
+		Action = 1555
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		Rand = 15
+	}
+
+	Object 时装说话8 = 2260
+	{
+		Action = 1556
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+		Rand = 20
+	}
+
+	Object 时装说话9 = 2261
+	{
+		Action = 1557
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 35
+		Rand = 35
+	}
+
+	Object 资源刷新器免疫控制 = 2262
+	{
+		Action = 1083
+		EvenID = 1
+	}
+
+	Object 南瓜怪:单体变羊 = 2263
+	{
+		Action = 1080
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		Rand = 40
+		S_Blood =                        0,90
+	}
+
+	Object 南瓜怪:死亡哀嚎 = 2264
+	{
+		Action = 1558
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+		S_Blood =                        0,90
+	}
+
+	Object 万圣节野外掉落说话1 = 2265
+	{
+		Action = 1559
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 45
+		Rand = 35
+	}
+
+	Object 万圣异届商店时装说话1 = 2266
+	{
+		Action = 1560
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 45
+		Rand = 35
+	}
+
+	Object 万圣节NPC说话 = 2267
+	{
+		Action = 1561
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 45
+		Rand = 35
+	}
+
+	Object 机奴杀手 = 2268
+	{
+		Action = 1562
+		EvenID = 1
+	}
+
+	Object 新手火女半血状态 = 2269
+	{
+		Action = 1563
+		EvenID = 1
+	}
+
+	Object 新手英雄无敌状态 = 2270
+	{
+		Action = 1564
+		EvenID = 1
+	}
+
+	Object 物理兵受到玩家攻击时增加玩家攻击属性 = 2271
+	{
+		Action =                        1565,1568
+		EvenID = 3
+	}
+
+	Object 火药兵受到玩家攻击时增加玩家攻击属性 = 2272
+	{
+		Action =                        1567,1570
+		EvenID = 3
+	}
+
+	Object 魔法兵受到玩家攻击时增加玩家攻击属性 = 2273
+	{
+		Action =                        1566,1569
+		EvenID = 3
+	}
+
+	Object 血低于50%增加基础防御（任务近战防御技能） = 2274
+	{
+		Action = 2401
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,50
+	}
+
+	Object 血低于30%增加暴击60%（任务近战狂暴技能） = 2275
+	{
+		Action = 2102
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,30
+	}
+
+	Object 血低于40%增加近战攻击30%（任务近战攻击技能） = 2276
+	{
+		Action = 2001
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,40
+	}
+
+	Object 血低于50%有40几率把玩家变成怪物（任务魔法微控制技能） = 2277
+	{
+		Action = 2202
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 40
+		S_Blood =                        0,50
+	}
+
+	Object 血低于50%增加自身魔法攻击30%（任务魔法攻击技能） = 2278
+	{
+		Action = 2003
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,50
+	}
+
+	Object 血低于50%增加自身火药攻击30%（任务火药攻击技能） = 2279
+	{
+		Action = 2002
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,50
+	}
+
+	Object 血低于70%有70%几率减少玩家攻击速度20%（任务火药速度技能） = 2280
+	{
+		Action = 2304
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 70
+		S_Blood =                        0,70
+	}
+
+	Object 血低于30%增加自身移动速度30%（任务火药速度技能） = 2281
+	{
+		Action = 2303
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,30
+	}
+
+	Object 血低于50%减少玩家类型攻击20%（精英近战防御型） = 2282
+	{
+		Action = 2004
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,50
+	}
+
+	Object 血低于50%减少玩家物理防御30%（精英近战攻击型） = 2283
+	{
+		Action = 2402
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,50
+	}
+
+	Object 血低于40%减少攻击速度20%（精英近战攻击型） = 2284
+	{
+		Action = 2304
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,40
+	}
+
+	Object 血低于50%使用单体伤害技能附加1.5秒眩晕（精英火药速度型） = 2285
+	{
+		Action =                        2201,2503
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,50
+	}
+
+	Object 血低于50%使用单体伤害技能附加20%移动速度减少（精英魔法控制型） = 2286
+	{
+		Action =                        2505,2304
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,50
+	}
+
+	Object 血低于50%减少玩家魔法防御力（精英魔法攻击型） = 2287
+	{
+		Action = 2404
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 15
+		S_Blood =                        0,50
+	}
+
+	Object 盗贼玛雅血低于60召唤小怪 = 2288
+	{
+		Action =                        2604,1575
+		CanUseCount = 2
+		EvenID = 3
+		FreezeTime = 60
+		S_Blood =                        0,60
+	}
+
+	Object 自杀 = 2289
+	{
+		Action = 2606
+		EvenID = 1
+	}
+
+	Object 残暴的大年兽血低于70%召唤小年兽 = 2290
+	{
+		Action =                        1571,1572
+		CanUseCount = 2
+		EvenID = 3
+		FreezeTime = 0
+		S_Blood =                        60,70
+	}
+
+	Object 残暴的大年兽血低于5%逃跑 = 2291
+	{
+		Action =                        1573,1574
+		EvenID = 3
+		S_Blood =                        0,5
+	}
+
+	Object 盗贼玛雅的随从搜索需要补血的目标 = 2292
+	{
+		Action = 1060
+		EvenID = 7
+	}
+
+	Object 盗贼玛雅的随从补血 = 2293
+	{
+		Action =                        1577,1578
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 60
+		O_CommondID = 110001
+	}
+
+	Object 盗贼玛雅请求加血 = 2294
+	{
+		Action = 1576
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 30
+		S_Blood =                        0,50
+	}
+
+	Object 盗贼玛雅挂载加血命令 = 2295
+	{
+		Action = 1058
+		EvenID = 7
+		S_Blood =                        0,40
+	}
+
+	Object 被召唤的小年兽变形玩家 = 2296
+	{
+		Action =                        2202,1579
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 90
+	}
+
+	Object 攻城车超级状态 = 2297
+	{
+		Action = 1580
+		EvenID = 1
+	}
+
+	Object 毒蛇监工说话 = 2298
+	{
+		Action = 1581
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 大工头塔夫说话 = 2299
+	{
+		Action = 1571
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 风之争夺要塞状态 = 2300
+	{
+		Action = 1582
+		EvenID = 1
+	}
+
+	Object 地之争夺要塞状态 = 2301
+	{
+		Action = 1583
+		EvenID = 1
+	}
+
+	Object 水之争夺要塞状态 = 2302
+	{
+		Action = 1584
+		EvenID = 1
+	}
+
+	Object 火之争夺要塞状态 = 2303
+	{
+		Action = 1585
+		EvenID = 1
+	}
+
+	Object 城门回血状态 = 2304
+	{
+		Action = 1586
+		EvenID = 1
+	}
+
+	Object 攻城要塞-群状态 = 2305
+	{
+		Action = 1587
+		EvenID = 1
+	}
+
+	Object 鼹鼠伐木总管黑尾 = 2306
+	{
+		Action = 1588
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 火鬃巨蜥长牙 = 2307
+	{
+		Action = 2001
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,50
+	}
+
+	Object 帝国守城强力NPC说话 = 2308
+	{
+		Action =                        1589,1591
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+	}
+
+	Object 联邦守城强力NPC说话 = 2309
+	{
+		Action =                        1590,1592
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+	}
+
+	Object 增加暴击60% = 2310
+	{
+		Action = 2102
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		S_Blood =                        0,60
+	}
+
+	Object 毒寡妇开场白 = 2311
+	{
+		Action = 1593
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 1800
+	}
+
+	Object 毒寡妇撒毒 = 2312
+	{
+		Action =                        1681,1594
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,40
+	}
+
+	Object 恶魔万火焚身 = 2313
+	{
+		Action =                        1595,1664
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,50
+	}
+
+	Object 沙虫领主地刺 = 2314
+	{
+		Action =                        1596,1597
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		Rand = 50
+		S_Blood =                        0,70
+	}
+
+	Object 恶鬼雷电 = 2315
+	{
+		Action =                        1598,1599
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		S_Blood =                        0,20
+	}
+
+	Object 岩魔领主 = 2316
+	{
+		Action =                        1601,1600
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		Rand = 50
+		S_Blood =                        0,70
+	}
+
+	Object 群体诅咒 = 2317
+	{
+		Action =                        1602,1603
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,90
+	}
+
+	Object 恶鬼说话 = 2318
+	{
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 龙王拍击 = 2319
+	{
+		Action =                        1604,1605
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,90
+	}
+
+	Object 龙王说话 = 2320
+	{
+		Action = 1606
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 3600
+	}
+
+	Object 怪物搜索口袋宠物 = 2321
+	{
+		Action = 1654
+		EvenID = 7
+		S_Blood =                        99,100
+	}
+
+	Object 怪物强制攻击口袋宠物 = 2322
+	{
+		Action = 1006
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 30
+		O_CommondID = 70001
+	}
+
+	Object 口袋怪物发布命令 = 2323
+	{
+		EvenID = 7
+	}
+
+	Object 凤凰出生状态 = 2324
+	{
+		Action = 1607
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 清道夫说话 = 2325
+	{
+		Action = 1608
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 30
+	}
+
+	Object 火女领域怪 = 2326
+	{
+		Action = 1609
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 枪神领域怪 = 2327
+	{
+		Action = 1610
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 剑圣领域怪 = 2328
+	{
+		Action = 1611
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 博士领域怪 = 2329
+	{
+		Action = 1612
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 刺客领域怪 = 2330
+	{
+		Action = 1613
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 龙战领域怪 = 2331
+	{
+		Action = 1614
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 毒蛇领域怪 = 2332
+	{
+		Action = 1615
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 屠夫领域怪 = 2333
+	{
+		Action = 1616
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 战魂领域怪 = 2334
+	{
+		Action = 1617
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 修罗领域怪 = 2335
+	{
+		Action = 1618
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 骑士领域怪 = 2336
+	{
+		Action = 1619
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 月女领域怪 = 2337
+	{
+		Action = 1620
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 黑龙领域怪 = 2338
+	{
+		Action = 1621
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 剧毒领域怪 = 2339
+	{
+		Action = 1622
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 女王领域怪 = 2340
+	{
+		Action = 1623
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 鹰眼领域怪 = 2341
+	{
+		Action = 1624
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 雷帝领域怪 = 2342
+	{
+		Action = 1625
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 狂徒领域怪 = 2343
+	{
+		Action = 1626
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 黑弩领域怪 = 2344
+	{
+		Action = 1627
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 灵法领域怪 = 2345
+	{
+		Action = 1628
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 沙王领域怪 = 2346
+	{
+		Action = 1629
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 狼女领域怪 = 2347
+	{
+		Action = 1630
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 武神领域怪 = 2348
+	{
+		Action = 1631
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 冰霜领域怪 = 2349
+	{
+		Action = 1632
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 宝藏掠夺者头目 = 2350
+	{
+		Action = 1633
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 1200
+	}
+
+	Object 黑暗狂战士说话 = 2351
+	{
+		Action =                        1634,2102
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		S_Blood =                        0,50
+	}
+
+	Object 黑暗牧师说话 = 2352
+	{
+		Action =                        1642,1635
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+		S_Blood =                        0,70
+	}
+
+	Object 黑暗阻击手说话 = 2353
+	{
+		Action =                        1643,1636
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,40
+	}
+
+	Object 黑暗火法师说话 = 2354
+	{
+		Action =                        1644,1637
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+		S_Blood =                        0,30
+	}
+
+	Object 黑暗防御者说话 = 2355
+	{
+		EvenID = 3
+	}
+
+	Object 黑暗冰法师说话 = 2356
+	{
+		Action =                        1646,1639
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+		S_Blood =                        0,20
+	}
+
+	Object 黑暗凶狼说话 = 2357
+	{
+		EvenID = 4
+	}
+
+	Object 魔王领域怪 = 2358
+	{
+		Action = 1647
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 血战领域怪 = 2359
+	{
+		Action = 1648
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 暗影领域怪 = 2360
+	{
+		Action = 1649
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 飞侠领域怪 = 2361
+	{
+		Action = 1650
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 刀锋领域怪 = 2362
+	{
+		Action = 1651
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 黑法领域怪 = 2363
+	{
+		Action = 1652
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 星爆 = 2364
+	{
+		Action = 1653
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 30
+	}
+
+	Object 测试BOSS = 2365
+	{
+		Action = 2705
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 大地震击 = 2366
+	{
+		Action =                        1655,1656
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 45
+		Rand = 30
+		S_Blood =                        0,30
+	}
+
+	Object 塔夫强力攻击 = 2367
+	{
+		Action =                        1604,1605
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 50
+		S_Blood =                        0,90
+	}
+
+	Object BOSS效果光环 = 2368
+	{
+		Action = 1657
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 精英怪效果光环 = 2369
+	{
+		Action = 1658
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 幻影领主分身 = 2370
+	{
+		Action =             1659,1660
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+		S_Blood =             0,19
+	}
+
+	Object 幻影舞阵 = 2371
+	{
+		Action =             1661,1662
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 45
+		Rand = 50
+		S_Blood =             0,49
+	}
+
+	Object 幻影领主变身玩家 = 2372
+	{
+		Action =             2202,1663
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 30
+		S_Blood =             0,89
+	}
+
+	Object 屠杀者野蛮打击 = 2373
+	{
+		Action =                        1666,1665
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,50
+	}
+
+	Object 冰法师说话1 = 2374
+	{
+		Action = 1669
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 冰盾 = 2375
+	{
+		Action = 1672
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 冰爆 = 2376
+	{
+		Action = 1671
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 45
+		Rand = 30
+		S_Blood =                        0,50
+	}
+
+	Object 破碎者狂暴说话 = 2377
+	{
+		Action = 1634
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 破碎者狂暴 = 2378
+	{
+		Action = 2102
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 破碎攻击 = 2379
+	{
+		Action =                        1668,1667
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 30
+		S_Blood =                        0,50
+	}
+
+	Object 建筑发布命令 = 2380
+	{
+		Action = 1674
+		EvenID = 7
+	}
+
+	Object 攻城车搜索命令 = 2381
+	{
+		Action = 1673
+		EvenID = 7
+	}
+
+	Object 攻城车强制攻击 = 2382
+	{
+		Action = 1675
+		EvenID = 6
+		O_CommondID = 130001
+	}
+
+	Object 辉耀 = 2383
+	{
+		Action =                        1676,1677
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 65
+	}
+
+	Object 城堡状态 = 2384
+	{
+		Action = 1679
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 军旗状态 = 2385
+	{
+		Action = 1678
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 毒寡妇拉人 = 2386
+	{
+		Action =                        1680,1682
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,80
+	}
+
+	Object 毒寡妇撒毒说话 = 2387
+	{
+		Action = 1594
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+	}
+
+	Object 毒寡妇绑人 = 2388
+	{
+		Action = 1683
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 神龙拍击 = 2389
+	{
+		Action =             1684,1685
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =             0,89
+	}
+
+	Object 神龙暴怒 = 2390
+	{
+		Action = 2102
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		S_Blood =             0,29
+	}
+
+	Object 神龙暴怒说话 = 2391
+	{
+		Action = 1686
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =             0,29
+	}
+
+	Object 死神冲击 = 2392
+	{
+		Action =                        1687,1688
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        0,70
+	}
+
+	Object 龙王开场白 = 2393
+	{
+		Action = 1606
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 骑士开场白 = 2394
+	{
+		Action = 1689
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 1800
+	}
+
+	Object 骑士震击 = 2395
+	{
+		Action =                        1690,1691
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 45
+		S_Blood =                        0,30
+	}
+
+	Object 宠物血少说话 = 2396
+	{
+		Action = 1692
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 300
+		S_Blood =                        0,20
+	}
+
+	Object 追杀怪物搜索难民 = 2397
+	{
+		Action = 1654
+		EvenID = 7
+	}
+
+	Object 宠物脱离战斗回血 = 2398
+	{
+		Action =                        1693,1236
+		EvenID = 9
+	}
+
+	Object 拉锯牧师治疗 = 2399
+	{
+		Action = 1642
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 120
+	}
+
+	Object 帝国队长说话 = 2400
+	{
+		Action = 1694
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+	}
+
+	Object 联邦队长说话 = 2401
+	{
+		Action = 1695
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+	}
+
+	Object 帝国队长强力攻击 = 2402
+	{
+		Action = 1696
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 联邦队长强力攻击 = 2403
+	{
+		Action = 1697
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 雷霆卡 = 2404
+	{
+		Action = 1698
+		EvenID = 1
+	}
+
+	Object 寒气恶鬼 = 2405
+	{
+		Action =                        1699,1701
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		S_Blood =                        0,70
+	}
+
+	Object 寒冰蛟龙说话 = 2406
+	{
+		Action = 1702
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,70
+	}
+
+	Object 寒冰蛟龙 = 2407
+	{
+		Action =                        1700,1702
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		S_Blood =                        0,70
+	}
+
+	Object 火炎兽 = 2408
+	{
+		Action = 1703
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 竞技场-控制 = 2409
+	{
+		Action =                        2305,1704
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+		S_Blood =                        0,70
+	}
+
+	Object 用兵团说话 = 2410
+	{
+		Action = 1705
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+	}
+
+	Object 宠物提醒 = 2411
+	{
+		Action = 1706
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 1200
+	}
+
+	Object 吃豆子怪逃跑 = 2412
+	{
+		Action = 1707
+		CanUseCount = 1
+		D_Status = 758
+		EvenID = 7
+		FreezeTime = 2
+	}
+
+	Object BOSS范围召唤生物伤害 = 2413
+	{
+		Action = 1714
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 5
+		S_Blood =                        0,60
+	}
+
+	Object BOSS初始AOE = 2414
+	{
+		Action = 2707
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 强力技能免疫 = 2415
+	{
+		Action = 2709
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 减少玩家移动速度 = 2416
+	{
+		Action = 2305
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 高经验怪说话 = 2417
+	{
+		Action = 1708
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 10
+	}
+
+	Object 死神技能 = 2418
+	{
+		Action =                        1709,1710
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+		S_Blood =                        0,60
+	}
+
+	Object 死亡骑士大地攻击 = 2419
+	{
+		Action =                        1690,1691
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 死亡骑士死亡冲锋 = 2420
+	{
+		Action =                        1687,1688
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,40
+	}
+
+	Object 火凤凰 = 2421
+	{
+		Action = 1711
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 全体宠物召唤生物范围击退 = 2422
+	{
+		Action =                        1712,1713
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,80
+	}
+
+	Object 清道夫范围AOE召唤生物 = 2423
+	{
+		Action = 1714
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+	}
+
+	Object 聚宝怪吸收伤害 = 2424
+	{
+		Action = 1715
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object BOSS范围召唤生物伤害 = 2425
+	{
+		Action = 2708
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+		S_Blood =                        0,20
+	}
+
+	Object 机奴清道夫 = 2426
+	{
+		Action = 1716
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 20
+	}
+
+	Object 召唤机奴清道夫 = 2427
+	{
+		Action = 1717
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,20
+	}
+
+	Object 测试BOSS技能 = 2428
+	{
+		Action = 1718
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+	}
+
+	Object 寒冰光环 = 2429
+	{
+		Action = 1719
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 死亡咆哮弹 = 2430
+	{
+		Action =             1722,1721
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =             0,49
+	}
+
+	Object 雪怪重击 = 2431
+	{
+		Action = 1684
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		Rand = 20
+		S_Blood =             0,89
+	}
+
+	Object 雪怪冰封 = 2432
+	{
+		Action =             1723,1724
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =             0,69
+	}
+
+	Object 空间星爆 = 2433
+	{
+		Action = 1725
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		Rand = 10
+		S_Blood =                        0,95
+	}
+
+	Object 空间幻影阵舞 = 2434
+	{
+		Action =                        1726,1727
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		Rand = 50
+		S_Blood =                        0,70
+	}
+
+	Object 幻影攻击 = 2435
+	{
+		Action =                        1728,1729
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,90
+	}
+
+	Object 召唤空间掌控者 = 2436
+	{
+		Action =                        1730,1732
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,98
+	}
+
+	Object 召唤空间掌控者 = 2437
+	{
+		Action =                        1730,1732
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,80
+	}
+
+	Object 被召唤的空间掌控者说话 = 2438
+	{
+		Action = 1733
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 被召唤的空间掌控者召唤 = 2439
+	{
+		Action =                        1731,1734
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,98
+	}
+
+	Object 超兔冲锋 = 2440
+	{
+		Action = 1688
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+		Rand = 20
+	}
+
+	Object 兔王开场白 = 2441
+	{
+		Action = 1735
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+	}
+
+	Object 兔王群体眩晕 = 2442
+	{
+		Action = 1736
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,50
+	}
+
+	Object 月桂精 = 2443
+	{
+		Action = 1737
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+	}
+
+	Object 40%生命召唤机奴清道夫 = 2444
+	{
+		Action = 1717
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,40
+	}
+
+	Object 卡罗斯说话 = 2445
+	{
+		Action = 1738
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        95,100
+	}
+
+	Object 源泉逃跑 = 2446
+	{
+		Action = 1103
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 6
+	}
+
+	Object 源泉说话 = 2447
+	{
+		Action = 1739
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 20
+	}
+
+	Object 幻影领主说话 = 2448
+	{
+		Action = 1740
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 15
+		S_Blood =                        95,100
+	}
+
+	Object 空间主宰说话 = 2449
+	{
+		Action = 1741
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		S_Blood =                        95,100
+	}
+
+	Object 空间主宰疾风步 = 2450
+	{
+		Action = 1742
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 护卫说话 = 2451
+	{
+		Action = 1743
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 卡罗斯大地攻击 = 2452
+	{
+		Action =                        1691,1744
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =                        0,40
+	}
+
+	Object 典狱长说话 = 2453
+	{
+		Action = 1745
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 兄弟会说话 = 2454
+	{
+		Action = 1746
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+		Rand = 50
+	}
+
+	Object 兄弟会回血 = 2455
+	{
+		Action = 1747
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+	}
+
+	Object 橡皮王说话 = 2456
+	{
+		Action = 1748
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+	}
+
+	Object 礼包盗贼说话 = 2457
+	{
+		Action = 1103
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 6
+	}
+
+	Object 礼包盗贼逃跑 = 2458
+	{
+		Action = 1749
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 600
+		Rand = 10
+	}
+
+	Object 小塔夫说话 = 2459
+	{
+		Action = 1750
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+
+	Object 小塔夫强力攻击 = 2460
+	{
+		Action = 1684
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		Rand = 70
+	}
+
+	Object 火龙宝宝说话 = 2461
+	{
+		Action = 1751
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+
+	Object 冰雪球 = 2462
+	{
+		Action =                        1752,1761
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+	}
+
+	Object 六芒星阵 = 2463
+	{
+		Action =                        1753,1762
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 冰雪结晶 = 2464
+	{
+		Action =                        1754,1763
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 树灵缠绕 = 2465
+	{
+		Action =                        1755,1764
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 森林之灵 = 2466
+	{
+		Action =                        1756,1765
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+	}
+
+	Object 树妖召唤 = 2467
+	{
+		Action =                        1757,1766
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 灼烧 = 2468
+	{
+		Action =                        1758,1767
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 40
+	}
+
+	Object 禁魔 = 2469
+	{
+		Action =                        1759,1768
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 暴击 = 2470
+	{
+		Action =                        1760,1769
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+	}
+
+	Object 树魂缠绕 = 2471
+	{
+		Action =                        1770,1771
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		Rand = 30
+	}
+
+	Object 冰冻球 = 2472
+	{
+		Action =                        1772,1773
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 雪人仆从说话 = 2473
+	{
+		Action = 1774
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 300
+		Rand = 50
+	}
+
+	Object 使魔领域怪 = 2474
+	{
+		Action = 1775
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 双子领域怪 = 2475
+	{
+		Action = 1776
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 赌神领域怪 = 2476
+	{
+		Action = 1777
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 白虎宝宝说话 = 2477
+	{
+		Action = 1778
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 600
+	}
+
+	Object 年兽王说话 = 2478
+	{
+		Action =                        1779,1780
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 600
+	}
+
+	Object 年兽王强力攻击 = 2479
+	{
+		Action = 1604
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 25
+		Rand = 50
+		S_Blood =                        0,90
+	}
+
+	Object 年兽王群体攻击 = 2480
+	{
+		Action = 1781
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 25
+		Rand = 50
+		S_Blood =                        0,60
+	}
+
+	Object 新防守-普通BOSS-物理-狂暴 = 2481
+	{
+		Action = 1782
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =                        0,20
+	}
+
+	Object 新防守-普通BOSS-物理-旋风 = 2482
+	{
+		Action = 1783
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 新防守-普通BOSS-物理-无敌 = 2483
+	{
+		Action = 1784
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 新防守-普通BOSS-火药-眩晕 = 2484
+	{
+		Action = 1785
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 新防守-普通BOSS-火药-火焰 = 2485
+	{
+		Action = 1786
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 新防守-普通BOSS-魔法-闪避 = 2486
+	{
+		Action = 1787
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 24
+	}
+
+	Object 新防守-普通BOSS-魔法-攻击图腾 = 2487
+	{
+		Action = 1788
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+	}
+
+	Object 新防守-普通BOSS-魔法-治疗图腾 = 2488
+	{
+		Action = 1789
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 12
+	}
+
+	Object 新防守-红色爬虫 = 2489
+	{
+		Action = 1790
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 新防守-机奴火枪队长 = 2490
+	{
+		Action = 1791
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 新防守-地穴甲虫 = 2491
+	{
+		Action = 1792
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 新防守-幽暗熊兽 = 2492
+	{
+		Action = 1793
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 新防守-生存挑战 = 2493
+	{
+		Action = 1794
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+	}
+
+	Object 英雄塔-怪物回血 = 2494
+	{
+		Action = 1795
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 5
+	}
+
+	Object 剑圣+屠夫 = 2495
+	{
+		Action = 2710
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 刺客+屠夫 = 2496
+	{
+		Action = 2711
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 剑圣+骑士 = 2497
+	{
+		Action = 2712
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 剑圣+战魂 = 2498
+	{
+		Action = 2713
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 武神+屠夫 = 2499
+	{
+		Action = 2714
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 武神+狂徒 = 2500
+	{
+		Action = 2715
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 刺客+武神 = 2501
+	{
+		Action = 2716
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 狂徒+屠夫 = 2502
+	{
+		Action = 2717
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 狂徒+战魂 = 2503
+	{
+		Action = 2718
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 武神+沙王 = 2504
+	{
+		Action = 2719
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 刀锋+武神 = 2505
+	{
+		Action = 2720
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 血战+狂徒 = 2506
+	{
+		Action = 2721
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 使魔+武神 = 2507
+	{
+		Action = 2722
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 骑士+屠夫 = 2508
+	{
+		Action = 2723
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 修罗+龙战 = 2509
+	{
+		Action = 2724
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 修罗+龙战 = 2510
+	{
+		Action = 2725
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 修罗+枪神 = 2511
+	{
+		Action = 2726
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 枪神+鹰眼 = 2512
+	{
+		Action = 2727
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 月女+鹰眼 = 2513
+	{
+		Action = 2728
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 黑驽+飞侠 = 2514
+	{
+		Action = 2729
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 狼女+枪神 = 2515
+	{
+		Action = 2730
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 魔王+黑驽 = 2516
+	{
+		Action = 2731
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 狼女+月女 = 2517
+	{
+		Action = 2732
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 飞侠+枪神 = 2518
+	{
+		Action = 2733
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 魔王+鹰眼 = 2519
+	{
+		Action = 2734
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 火女+黑龙 = 2520
+	{
+		Action = 2735
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 剧毒+毒蛇 = 2521
+	{
+		Action = 2736
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 火女+毒蛇 = 2522
+	{
+		Action = 2737
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 黑龙+雷帝 = 2523
+	{
+		Action = 2738
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 雷帝+灵法 = 2524
+	{
+		Action = 2739
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 赌神+暗影 = 2525
+	{
+		Action = 2740
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 剧毒+冰霜 = 2526
+	{
+		Action = 2741
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 女王+暗影 = 2527
+	{
+		Action = 2742
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 灵法+黑法 = 2528
+	{
+		Action = 2743
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 修罗+骑士 = 2529
+	{
+		Action = 2744
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		Rand = 30
+	}
+
+	Object 剑圣+屠夫 = 2530
+	{
+		Action = 2745
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 刺客+屠夫 = 2531
+	{
+		Action = 2746
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 剑圣+骑士 = 2532
+	{
+		Action = 2747
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 剑圣+战魂 = 2533
+	{
+		Action = 2748
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 武神+屠夫 = 2534
+	{
+		Action = 2749
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 武神+狂徒 = 2535
+	{
+		Action = 2750
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 刺客+武神 = 2536
+	{
+		Action = 2751
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 狂徒+屠夫 = 2537
+	{
+		Action = 2752
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 狂徒+战魂 = 2538
+	{
+		Action = 2753
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 武神+沙王 = 2539
+	{
+		Action = 2754
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 刀锋+武神 = 2540
+	{
+		Action = 2755
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 血战+狂徒 = 2541
+	{
+		Action = 2756
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 使魔+武神 = 2542
+	{
+		Action = 2757
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 骑士+屠夫 = 2543
+	{
+		Action = 2758
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 修罗+龙战 = 2544
+	{
+		Action = 2759
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 修罗+龙战 = 2545
+	{
+		Action = 2760
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 修罗+枪神 = 2546
+	{
+		Action = 2761
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 枪神+鹰眼 = 2547
+	{
+		Action = 2762
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 月女+鹰眼 = 2548
+	{
+		Action = 2763
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 黑驽+飞侠 = 2549
+	{
+		Action = 2764
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 狼女+枪神 = 2550
+	{
+		Action = 2765
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 魔王+黑驽 = 2551
+	{
+		Action = 2766
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 狼女+月女 = 2552
+	{
+		Action = 2767
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 飞侠+枪神 = 2553
+	{
+		Action = 2768
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 魔王+鹰眼 = 2554
+	{
+		Action = 2769
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 火女+黑龙 = 2555
+	{
+		Action = 2770
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 剧毒+毒蛇 = 2556
+	{
+		Action = 2771
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 火女+毒蛇 = 2557
+	{
+		Action = 2772
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 黑龙+雷帝 = 2558
+	{
+		Action = 2773
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 雷帝+灵法 = 2559
+	{
+		Action = 2774
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 赌神+暗影 = 2560
+	{
+		Action = 2775
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 剧毒+冰霜 = 2561
+	{
+		Action = 2776
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 女王+暗影 = 2562
+	{
+		Action = 2777
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 灵法+黑法 = 2563
+	{
+		Action = 2778
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 修罗+骑士 = 2564
+	{
+		Action = 2779
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =                        0,10
+	}
+
+	Object 天使说话 = 2565
+	{
+		Action = 1796
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+
+	Object 圣洁祝福 = 2566
+	{
+		Action = 1797
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 召唤(物理) = 2567
+	{
+		Action = 2780
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+	}
+
+	Object 召唤(火药) = 2568
+	{
+		Action = 2781
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+	}
+
+	Object 召唤(魔法) = 2569
+	{
+		Action = 2782
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+	}
+
+	Object 召唤(减速) = 2570
+	{
+		Action = 2783
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+	}
+
+	Object 召唤(护盾) = 2571
+	{
+		Action = 2784
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+	}
+
+	Object 召唤(能量) = 2572
+	{
+		Action = 2785
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 50
+	}
+
+	Object 血低于30%增加基础防御(天空物理怪) = 2600
+	{
+		Action = 2800
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =               0,30
+	}
+
+	Object 血低于50%增加火药攻击(天空火药怪) = 2601
+	{
+		Action = 2802
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =               0,50
+	}
+
+	Object 降低玩家的移动速度(天空魔法怪) = 2602
+	{
+		Action = 2804
+		CanUseCount = 1
+		DS_Distant =               1,8
+		EvenID = 4
+		FreezeTime = 100
+	}
+
+	Object 血低于50%增加物理攻击（天空物理怪2） = 2603
+	{
+		Action = 2806
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =               0,50
+	}
+
+	Object （天空物理怪3） = 2604
+	{
+		Action = 2800
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =               0,50
+	}
+
+	Object 自杀 = 2605
+	{
+		Action = 2863
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =             0,39
+	}
+
+	Object 互相BUFF = 2606
+	{
+		Action =               2808,2809
+		EvenID = 6
+		O_CommondID = 50001
+	}
+
+	Object 互相BUFF发布命令 = 2607
+	{
+		Action = 2810
+		EvenID = 7
+	}
+
+	Object 互相BUFF搜索命令 = 2608
+	{
+		Action = 2811
+		EvenID = 7
+	}
+
+	Object 分身距离过大说话以及发布命令 = 2609
+	{
+		Action =               2812,2813
+		DS_Distant =               7,20
+		EvenID = 6
+		O_CommondID = 50003
+	}
+
+	Object 主体回应说话 = 2610
+	{
+		Action = 2815
+		EvenID = 6
+		O_CommondID = 50002
+	}
+
+	Object 主体搜索命令 = 2611
+	{
+		Action = 2814
+		EvenID = 7
+	}
+
+	Object XX = 2612
+	{
+	}
+
+	Object 主体发布对象命令 = 2613
+	{
+		Action = 2816
+		EvenID = 7
+	}
+
+	Object 分身搜索主体发出的对象命令 = 2614
+	{
+		Action = 2817
+		EvenID = 7
+	}
+
+	Object 机械炮免疫三系攻击 = 2615
+	{
+		Action = 2848
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 2号火药怪击退 = 2616
+	{
+		Action = 2818
+		CanUseCount = 1
+		DS_Distant =               1,4
+		EvenID = 4
+		FreezeTime = 10
+	}
+
+	Object 3号魔法怪群体变羊 = 2617
+	{
+		Action = 2820
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 6
+		Rand = 60
+	}
+
+	Object 普通天空物理3怪请求加血命令 = 2618
+	{
+		Action = 2821
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 机械物理兵精英2请求加血命令 = 2619
+	{
+		Action = 2822
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 机械物理兵精英2.5请求加血命令 = 2620
+	{
+		Action = 2823
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 机械火药兵精英2请求加血命令 = 2621
+	{
+		Action = 2824
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 机械火药兵精英2.5请求加血命令 = 2622
+	{
+		Action = 2825
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 机械魔法兵精英2请求加血命令 = 2623
+	{
+		Action = 2826
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 机械魔法兵精英2.5请求加血命令 = 2624
+	{
+		Action = 2827
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 2区BOSS2请求加血命令 = 2625
+	{
+		Action = 2828
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 2区BOSS3请求加血命令 = 2626
+	{
+		Action = 2829
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 将军BOSS请求加血命令 = 2627
+	{
+		Action = 2830
+		EvenID = 7
+		S_Blood =               0,90
+	}
+
+	Object 机械补血兵搜索补血命令 = 2628
+	{
+		Action = 2831
+		EvenID = 7
+	}
+
+	Object 机械补血兵2搜索补血命令 = 2629
+	{
+		Action = 2832
+		EvenID = 7
+	}
+
+	Object 机械补血兵3搜索补血命令 = 2630
+	{
+		Action = 2833
+		EvenID = 7
+	}
+
+	Object 机械补血仆从搜索补血命令 = 2631
+	{
+		Action = 2834
+		EvenID = 7
+	}
+
+	Object 机械补血兵补血 = 2632
+	{
+		Action = 2835
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 10
+		O_CommondID = 60002
+	}
+
+	Object 机械补血兵2补血 = 2633
+	{
+		Action = 2836
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 10
+		O_CommondID = 60001
+	}
+
+	Object 机械补血兵3补血 = 2634
+	{
+		Action = 2837
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 10
+		O_CommondID = 60004
+	}
+
+	Object 机械补血仆从补血 = 2635
+	{
+		Action = 2838
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 10
+		O_CommondID = 60003
+	}
+
+	Object 2区BOSS击退状态 = 2636
+	{
+		Action = 2839
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 13
+		Rand = 80
+	}
+
+	Object 机械压制期喊话 = 2637
+	{
+		Action = 2840
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		S_Blood =               26,30
+	}
+
+	Object 机械压制期喊话 = 2638
+	{
+		Action = 2840
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		S_Blood =               21,25
+	}
+
+	Object 机械压制期喊话 = 2639
+	{
+		Action = 2840
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		S_Blood =               16,20
+	}
+
+	Object 机械压制期喊话 = 2640
+	{
+		Action = 2840
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		S_Blood =               11,15
+	}
+
+	Object 机械压制期喊话 = 2641
+	{
+		Action = 2840
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		S_Blood =               6,10
+	}
+
+	Object 机械压制期喊话 = 2642
+	{
+		Action = 2840
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+		S_Blood =               0,5
+	}
+
+	Object 将军BOSS使用大地震击 = 2643
+	{
+		Action =          2843,2871
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 27
+		Rand = 30
+		S_Blood =          61,100
+	}
+
+	Object 将军BOSS遇敌说话 = 2644
+	{
+		Action = 2861
+		CanUseCount = 1
+		EvenID = 8
+		FreezeTime = 3600
+	}
+
+	Object 1号BOSS使用离子闪电 = 2645
+	{
+		Action = 2869
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 17
+		Rand = 30
+	}
+
+	Object 1号BOSS使用范围落雷天谴 = 2646
+	{
+		Action =          1512,2805
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 24
+		S_Blood =          0,70
+	}
+
+	Object 将军BOSS使用寒气光环 = 2647
+	{
+		Action =           2846,2847
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 0
+		S_Blood =           0,20
+	}
+
+	Object 将军BOSS使用范围拉进 = 2648
+	{
+		Action =          2801,2844
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+		S_Blood =          0,20
+	}
+
+	Object 将军BOSS使用流星火雨 = 2649
+	{
+		Action =          2867,2868
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 31
+		S_Blood =          25,60
+	}
+
+	Object 2号BOSS出生禁止攻击BUFF = 2650
+	{
+		Action = 2850
+		EvenID = 1
+	}
+
+	Object 机械压制期发布命令 = 2651
+	{
+		Action = 2856
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 2
+	}
+
+	Object 2号BOSS搜索机械压制期命令 = 2652
+	{
+		Action = 2852
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 2
+	}
+
+	Object 2号BOSS收到命令后强制攻击及去除不良BUFF = 2653
+	{
+		Action =               2853,2854,2855
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 0
+		O_CommondID = 40001
+	}
+
+	Object 天空BOSS通用范围能量吞噬技能 = 2654
+	{
+		Action = 2841
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 13
+	}
+
+	Object 机械炮使用死亡榴弹 = 2655
+	{
+		Action = 2864
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 15
+	}
+
+	Object 2号BOSS测试攻城攻击 = 2656
+	{
+		Action = 2866
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 2
+		O_CommondID = 40001
+	}
+
+	Object 阿斯比拉使用幽暗诅咒 = 2659
+	{
+		Action = 1602
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 25
+		S_Blood =           40,100
+		S_NearEnemyNum =           0,2,4,30
+	}
+
+	Object 阿斯比拉使用迷幻阵舞 = 2660
+	{
+		Action = 2845
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 27
+		S_Blood =           0,80
+		S_NearEnemyNum =           0,2,4,30
+	}
+
+	Object 阿斯比拉使用剧毒之星 = 2661
+	{
+		Action = 1681
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_Blood =           0,40
+	}
+
+	Object 卡迪加使用树灵缠绕 = 2662
+	{
+		Action = 1755
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 30
+		S_NearEnemyNum =           0,2,4,30
+	}
+
+	Object 阿斯比拉使用风刃 = 2663
+	{
+		Action = 2862
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 卡迪加使用冰封路径 = 2664
+	{
+		Action = 2946
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 25
+	}
+
+	Object 卡迪加使用冰霜吐息 = 2665
+	{
+		Action = 2860
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 20
+	}
+
+	Object 将军BOSS脱离战斗消除寒光BUFF = 2666
+	{
+		Action = 2872
+		CanUseCount = 1
+		EvenID = 9
+	}
+
+	Object 将军BOSS使用死亡冲击 = 2667
+	{
+		Action = 2879
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 19
+		Rand = 25
+		S_Blood =          51,99
+	}
+
+	Object 1号BOSS出生雷电光效 = 2668
+	{
+		Action = 2870
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 将军BOSS光环测试 = 2669
+	{
+		Action = 2873
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 机械BOSS使用万火 = 2670
+	{
+		Action = 2849
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 10
+	}
+
+	Object 奖励BOSS说话开场白 = 2671
+	{
+		Action = 2874
+		CanUseCount = 1
+		EvenID = 8
+		FreezeTime = 3600
+	}
+
+	Object 怪物出生无法移动，站桩攻击 = 2672
+	{
+		Action = 2875
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 1号BOSS使用邪恶电场 = 2673
+	{
+		Action = 2876
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 35
+		Rand = 20
+	}
+
+	Object 1号BOSS使用毁灭黑洞 = 2674
+	{
+		Action = 2877
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 31
+		Rand = 30
+		S_Blood =          0,89
+	}
+
+	Object 将军BOSS使用范围冰封路径 = 2675
+	{
+		Action = 2878
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 24
+		Rand = 30
+		S_Blood =          21,89
+	}
+
+	Object 城门免疫所有状态 = 2676
+	{
+		Action = 2880
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 周年怪物黄光环 = 2701
+	{
+		Action = 2901
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 周年怪物红光环 = 2702
+	{
+		Action = 2902
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 周年怪物蓝光环 = 2703
+	{
+		Action = 2903
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 浪客领域怪 = 2705
+	{
+		Action = 2905
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object RX领域怪 = 2706
+	{
+		Action = 2906
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 星云领域怪 = 2707
+	{
+		Action = 2907
+		CanUseCount = 1
+		EvenID = 3
+		FreezeTime = 0
+	}
+
+	Object 足球宝宝说话 = 2728
+	{
+		Action = 2928
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 300
+	}
+
+	Object 西瓜强盗成员 = 2729
+	{
+		Action = 2929
+		CanUseCount = 1
+		EvenID = 4
+		FreezeTime = 60
+		Rand = 5
+	}
+
+	Object 西瓜强盗头目 = 2730
+	{
+		Action = 2930
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+	}
+
+	Object 扑克宝宝卡 = 2731
+	{
+		Action = 2931
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 300
+	}
+
+	Object 因丘比斯发送命令 = 2732
+	{
+		Action = 2932
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 4
+	}
+
+	Object 莎可蓓丝发送命令 = 2733
+	{
+		Action = 2933
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 4
+	}
+
+	Object 因丘比斯搜索命令 = 2734
+	{
+		Action = 2934
+		EvenID = 7
+	}
+
+	Object 莎可蓓丝搜索命令 = 2735
+	{
+		Action = 2935
+		EvenID = 7
+	}
+
+	Object 因丘比斯收到命令喊话 = 2736
+	{
+		Action = 2936
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 10
+		O_CommondID = 60002
+	}
+
+	Object 莎可蓓丝收到命令喊话 = 2737
+	{
+		Action = 2937
+		CanUseCount = 1
+		EvenID = 6
+		FreezeTime = 10
+		O_CommondID = 60001
+	}
+
+	Object 因丘比斯爱情羁绊 = 2738
+	{
+		Action = 2938
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 莎可蓓丝爱情羁绊 = 2739
+	{
+		Action = 2939
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 艾斯雪域BOSS统一增加暴击效果 = 2740
+	{
+		Action = 2940
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		S_Blood =                  0,19
+	}
+
+	Object 艾斯雪域BOSS近战群体攻击 = 2741
+	{
+		Action = 2941
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		Rand = 80
+		S_Blood =                  0,79
+	}
+
+	Object 艾斯雪域BOSS魔法群体攻击 = 2742
+	{
+		Action = 2946
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		Rand = 80
+		S_Blood =                  0,79
+	}
+
+	Object 艾斯雪域BOSS火药群体攻击 = 2743
+	{
+		Action = 2862
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		Rand = 80
+		S_Blood =                  0,79
+	}
+
+	Object 艾斯雪域BOSS使用暴雪 = 2744
+	{
+		Action =                  2942,2943
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 50
+		Rand = 60
+		S_Blood =                  0,39
+	}
+
+	Object 艾斯雪域BOSS冰冻一切 = 2745
+	{
+		Action =                  2944,2945
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		Rand = 60
+		S_Blood =                  40,79
+	}
+
+	Object 雪域怪物统一增加受伤加深状态 = 2747
+	{
+		Action = 2948
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 头顶真视眼睛效果 = 2748
+	{
+		Action = 2949
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 小神兽宝宝卡 = 2749
+	{
+		Action = 2950
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 300
+	}
+
+	Object 红桃皇后宝宝卡 = 2752
+	{
+		Action = 2953
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 300
+	}
+
+	Object 恶魔宝宝说话 = 2753
+	{
+		Action = 2954
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 300
+	}
+
+	Object 恶魔宝宝诅咒 = 2754
+	{
+		Action = 2955
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 雪女宝宝说话 = 2755
+	{
+		Action = 2956
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 300
+	}
+
+	Object 雪女宝宝祝福 = 2756
+	{
+		Action = 2957
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 黑年兔小卒使用范围减速 = 2757
+	{
+		Action = 2958
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		Rand = 40
+	}
+
+	Object 黑年兔王使用范围眩晕 = 2758
+	{
+		Action = 1196
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 50
+		S_Blood =       0,89
+	}
+
+	Object 黑年兔王使用群体击退 = 2759
+	{
+		Action = 1197
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		S_Blood =       0,69
+	}
+
+	Object 大年兽使用双重吐息 = 2760
+	{
+		Action = 2959
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 20
+	}
+
+	Object 大年兽使用范围冲击波 = 2761
+	{
+		Action = 2960
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 40
+		S_Blood =       0,79
+	}
+
+	Object 大年兽使用群体击退 = 2762
+	{
+		Action = 1196
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 35
+		S_Blood =       0,39
+	}
+
+	Object 年兽王使用灼烧光环 = 2763
+	{
+		Action =       2961,2962
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 80
+		S_Blood =       0,79
+	}
+
+	Object 年兽王使用范围地狱烈火 = 2764
+	{
+		Action = 2963
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 45
+		S_Blood =       0,89
+	}
+
+	Object 年兽王使用群体变小年兽 = 2765
+	{
+		Action =       2964,2965
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 60
+		S_Blood =       0,49
+	}
+
+	Object 肉山大熊王(BOSS) = 2766
+	{
+		Action = 2966
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 年兔宝宝说话 = 2767
+	{
+		Action = 2967
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+
+	Object 生命之泉出生是给自己加生命之泉状态 = 2768
+	{
+		Action = 2968
+		EvenID = 1
+	}
+
+	Object 联邦生命之泉出生是给自己加生命之泉状态 = 2769
+	{
+		Action = 2968
+		EvenID = 1
+	}
+
+	Object 火之魂宝宝说话 = 2970
+	{
+		Action = 2969
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+
+	Object 冰之魂宝宝说话 = 2971
+	{
+		Action = 2970
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+
+	Object 堕天使宝宝说话 = 2772
+	{
+		Action = 2971
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+
+	Object 堕天使印记 = 2773
+	{
+		Action = 2972
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 护士宝宝状态 = 2774
+	{
+		Action = 2973
+		CanUseCount = 1
+		EvenID = 1
+		FreezeTime = 0
+	}
+
+	Object 护士宝宝加血技能 = 2775
+	{
+		Action = 2974+2975
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 10
+		Rand = 50
+		S_Status = 1080
+	}
+	
+	Object 护士宝宝说话 = 2776
+	{
+		Action = 2976
+		CanUseCount = 1
+		EvenID = 7
+		FreezeTime = 600
+	}
+	
+	Object 美美沙宝宝说话 = 2777
+	{
+		EvenID = 7
+		Action = 2977
+		FreezeTime = 600
+		CanUseCount = 1
+	}
+
+	Object 国庆BOSS = 2788
+	{
+		EvenID = 1
+		Action = 2988
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 联邦BOSS说话 = 2789
+	{
+		EvenID = 7
+		Action = 2989
+		FreezeTime = 120
+		CanUseCount = 1
+	}
+
+	Object 联邦BOSS说话 = 2790
+	{
+		EvenID = 7
+		Action = 2990
+		FreezeTime = 120
+		CanUseCount = 1
+	}
+
+	Object 宠物出生回血 = 2791
+	{
+		EvenID = 1
+		Action = 2991
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 木制邮车 = 2792
+	{
+		EvenID = 1
+		Action = 2992
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object [加固]木制邮车 = 2793
+	{
+		EvenID = 1
+		Action = 2993
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 铁皮邮车 = 2794
+	{
+		EvenID = 1
+		Action = 2994
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object [加固]铁皮邮车 = 2795
+	{
+		EvenID = 1
+		Action = 2995
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 钢甲邮车 = 2796
+	{
+		EvenID = 1
+		Action = 2996
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 梦幻领主使用风刃 = 2797
+	{
+		EvenID = 4
+		Action = 2862
+		FreezeTime = 25
+		CanUseCount = 1
+	}
+
+	Object 梦幻领主使用死亡冲击 = 2798
+	{
+		EvenID = 4
+		Action = 2879
+		FreezeTime = 20
+		CanUseCount = 1
+		Rand = 25
+		S_Blood = 0,99
+	}
+
+	Object 梦幻领主使用大地攻击 = 2799
+	{
+		EvenID = 4
+		Action = 1690,1691
+		FreezeTime = 30
+		CanUseCount = 1
+		S_Blood = 0,80
+	}
+
+Object 阵营BOSS强力单体击退 = 2800
+	{
+		EvenID = 4
+		Action = 2997
+		FreezeTime = 20
+		CanUseCount = 1
+	}
+
+	Object 阵营BOSS范围光球效果 = 2801
+	{
+		EvenID = 4
+		Action = 2998
+		FreezeTime = 40
+		CanUseCount = 1
+	}
+
+	Object 阵营BOSS范围拉进 = 2802
+	{
+		EvenID = 4
+		Action = 2999
+		FreezeTime = 35
+		CanUseCount = 1
+		S_Blood = 0,49
+	}
+
+	Object 阵营BOSS强力BUFF = 2803
+	{
+		EvenID = 4
+		Action = 3000
+		FreezeTime = 5
+		CanUseCount = 1
+		S_Blood = 0,4
+	}
+
+	Object 联邦大魔导师(冰)-群体冰冻 = 2804
+	{
+		EvenID = 4
+		Action = 3001
+		FreezeTime = 30
+		CanUseCount = 1
+	}
+
+	Object 联邦大魔导师(冰)-暴风雪 = 2805
+	{
+		EvenID = 4
+		Action = 3002
+		FreezeTime = 40
+		CanUseCount = 1
+	}
+
+	Object 联邦大魔导师(雷)-群体电场 = 2806
+	{
+		EvenID = 4
+		Action = 3003
+		FreezeTime = 30
+		CanUseCount = 1
+	}
+
+	Object 联邦大魔导师(雷)-范围落雷 = 2807
+	{
+		EvenID = 4
+		Action = 3004
+		FreezeTime = 40
+		CanUseCount = 1
+	}
+
+	Object 机奴BOSS-群体冰冻 = 2808
+	{
+		EvenID = 4
+		Action = 3005
+		FreezeTime = 30
+		CanUseCount = 1
+	}
+
+	Object 机奴BOSS-群体电场 = 2809
+	{
+		EvenID = 4
+		Action = 3006
+		FreezeTime = 45
+		CanUseCount = 1
+	}
+
+	Object 机奴BOSS-20级恶魔守卫 = 2810
+	{
+		EvenID = 4
+		Action = 3007
+		FreezeTime = 60
+		CanUseCount = 1
+		S_Blood = 0,49
+	}
+
+	Object 天空都市攻城车免疫隐身状态 = 2811
+	{
+		EvenID = 1
+		Action = 3008
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 雪人BOSS免疫玩家伤害 = 2812
+	{
+		EvenID = 1
+		Action = 3009
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 圣诞使者放烟花 = 2813
+	{
+		EvenID = 4
+		Action = 3010,3011
+		FreezeTime = 10
+		CanUseCount = 1
+	}
+
+	Object 脱离战斗回满血 = 2814
+	{
+		EvenID = 9
+		Action = 3012
+		FreezeTime = 2
+		CanUseCount = 1
+	}
+
+	Object 全体宠物召唤生物范围(物理) = 2815
+	{
+		EvenID = 4
+		Action = 3013
+		FreezeTime = 10
+		CanUseCount = 1
+		D_NearEnemyNum = 0,9,3,100
+	}
+
+	Object 全体宠物召唤生物范围(火药) = 2816
+	{
+		EvenID = 4
+		Action = 3014
+		FreezeTime = 10
+		CanUseCount = 1
+		D_NearEnemyNum = 0,9,3,100
+	}
+
+	Object 全体宠物召唤生物范围(魔法) = 2817
+	{
+		EvenID = 4
+		Action = 3015
+		FreezeTime = 10
+		CanUseCount = 1
+		D_NearEnemyNum = 0,9,3,100
+	}
+
+	Object 生命低于20%，伤害减免30% = 2818
+	{
+		EvenID = 3
+		Action = 3016
+		FreezeTime = 0
+		CanUseCount = 1
+		S_Blood = 0,19
+	}
+
+	Object 生命低于20%，火药暴击提高20% = 2819
+	{
+		EvenID = 3
+		Action = 3017
+		FreezeTime = 0
+		CanUseCount = 1
+		S_Blood = 0,19
+	}
+
+	Object 生命低于20%，魔法攻击提高20% = 2820
+	{
+		EvenID = 3
+		Action = 3018
+		FreezeTime = 0
+		CanUseCount = 1
+		S_Blood = 0,19
+	}
+
+	Object 脱战清除物理增益BUFF = 2821
+	{
+		EvenID = 9
+		Action = 3019
+		FreezeTime = 2
+		CanUseCount = 1
+	}
+
+	Object 脱战清除火药增益BUFF = 2822
+	{
+		EvenID = 9
+		Action = 3020
+		FreezeTime = 2
+		CanUseCount = 1
+	}
+
+	Object 脱战清除物理增益BUFF = 2823
+	{
+		EvenID = 9
+		Action = 3021
+		FreezeTime = 2
+		CanUseCount = 1
+	}
+
+	Object 阵营战BOSS免疫玩家加血效果 = 2824
+	{
+		EvenID = 1
+		Action = 3022
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 炎龙宝宝说话 = 2825
+	{
+		EvenID = 7
+		Action = 3023
+		FreezeTime = 600
+		CanUseCount = 1
+	}
+
+	Object 复仇者施加状态 = 2826
+	{
+		EvenID = 4
+		Action = 3024
+		FreezeTime = 20
+		CanUseCount = 1
+		Rand = 20
+	}
+
+	Object 复仇者说话 = 2827
+	{
+		EvenID = 7
+		Action = 3025
+		FreezeTime = 600
+		CanUseCount = 1
+	}
+
+	Object 弓手宝宝说话 = 2828
+	{
+		EvenID = 7
+		Action = 3026
+		FreezeTime = 600
+		CanUseCount = 1
+	}
+
+	Object 弓手宝宝加状态 = 2829
+	{
+		EvenID = 1
+		Action = 3027
+		FreezeTime = 0
+		CanUseCount = 1
+	}
+
+	Object 弓手投放地雷 = 2830
+	{
+		EvenID = 7
+		Action = 3028,3029
+		FreezeTime = 3
+		CanUseCount = 1
+		S_Status = 2089
+	}
+
+	Object 金沙守将说话 = 2831
+	{
+		EvenID = 7
+		Action = 3030
+	}
+
+	Object 阿塔卡斯弟说话 = 2832
+	{
+		EvenID = 4
+		Action = 3031
+		FreezeTime = 60
+		CanUseCount = 1
+	}
+
+	Object 射手吉奥 = 2833
+	{
+		EvenID = 1
+		Action = 3032
+		FreezeTime = 600
+		CanUseCount = 1
+	}
+
+	Object 射手吉奥 = 2834
+	{
+		EvenID = 8
+		Action = 3033
+		FreezeTime = 300
+		CanUseCount = 1
+	}
+}
+

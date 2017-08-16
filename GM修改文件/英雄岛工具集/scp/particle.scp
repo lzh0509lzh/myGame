@@ -1,0 +1,28 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 10250
+
+Object 噬血 = 10250
+{
+	ID = 0
+	PartAlpha = 230
+	Life = 8
+	PerCaiyangNum = 1
+	ResID = 3
+	X_Speed_Min = -50
+	X_Speed_Max = 0
+	Y_Speed_Min = -50
+	Y_Speed_Max = 0
+	X_Add_Speed = 0
+	Y_Add_Speed = -10
+	X_DrawOffset = 6
+	Y_DrawOffset = 10
+	X_CaiYang = 2
+	Y_CaiYang = 2
+	Alpha_Begin = 200
+	Alpha_End = 50
+}

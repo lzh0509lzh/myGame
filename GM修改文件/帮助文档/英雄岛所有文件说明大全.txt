@@ -1,0 +1,185 @@
+Exploig            修改 升级经验  可学习技能个数、
+SuitEquip          套装属性修改
+skill-View         所有特效
+Magic              特效坐标两个格式的都要改
+PKArea             PK模式 修改
+Statu1还有 Effect1 时装特效两个文件 改
+ActorBaseProp      每级基本属性修改
+arena              竞技场段位显示修改
+BattleEffect       战功属性ID
+bouadvsel          貌似是装备方面的 
+ChunnelInfor       貌似是 所有传送点坐标？
+ConsortiaBattle    兵团战争地图修改
+ConsortiaSkill     兵团科技添加修改
+DropEquipment      装备制作概率判定？
+Effect1 2 3        所有属性 修改
+EquipSmelt 2       鉴定属性取值范围
+EquipUpdate        满制作满升级修改 
+Equipment          时装方面
+Gem                宝石方面
+GoodsSound         物品使用音效？
+GroupDrop          貌似有关什么物品的？
+HairRes            发型
+Head               角色头像ID修改
+HeadIDRes          貌似是好友头像修改？
+HorProEff          貌似是魂器属性？
+HorQuaExp          魂器升级经验？
+HousesLevelConfig  庄园房屋升级经验修改
+HousesNPC          庄园内的NPC和家具方面？
+KeywordFilter      屏蔽字符添加修改？
+LUAReqFunc         NPC应用函数添加
+mapinfor           复活点坐标 地图等级限制修改等等
+Materiel           材料物品类等等
+Medicament         技能 礼包等等
+monster 1 2 3 4    所有怪物ID 生命防御等等修改
+MonsterDrop        小怪掉落表修改包括塔夫
+MstSay             宠物NPC等自动说话修改
+NickName           称号添加修改？
+NPC                NPC添加修改
+npcshop            NPC出售物品添加删除
+orgshops           商城出售物品添加删除价格更改
+orgshoptypes       商城出售时的物品类型ID？
+particle           貌似 武器什么的特效修改？
+Prerogative_Equip  装备特权什么的？
+ScreenEffect       屏幕特效修改？类似春节活动放烟花？
+Scroll             宠物 等等修改添加
+Skill  1  2        英雄技能 升级限制等等
+Skill_Hero 1       同上
+Skills             生活技能？
+Sound              背景音乐修改？
+st_rectdef         摆摊地区？
+Status 1 2         物品使用添加修改 对应Effect1 2 3 ID修改属性
+Subject            题卷方面？
+VehicleView        载锯方面？
+WarInfo            防守副本方面？
+warshop            士气装备修改
+wenti              答题活动题目 貌似没什么可以修改的？
+WndToolTip         各种按钮图标显示修改？
+
+以下文件在scp/Lua/Act
+Act_Main           脚本应用
+BOSSKuangHuan      BOSS夺宝战脚本 未修复
+CaiBaoZhuhuodong   宝珠活动未测试？
+ChristmasDay       圣诞节活动脚本 未开启
+DuoBaoQiBing       夺宝奇兵 掉落修改
+FightForTreasureBox应该是月幕的宝箱争夺活动
+Goldtest_wb_title  周年庆典
+GongCeHuoDong      新年活动？
+HappyNewYear2010   同上
+JiNuQinXi          机奴奇袭掉落修改
+MerryChristmas     圣诞节活动 龙珠抽奖修改
+MidAutumnDay       中秋活动？
+MysteriousPlace    神秘掉落
+SearchTreasure     探宝活动，藏宝图
+SpringFestival     春节活动NPC兑换奖励修改年兽王掉落
+WanShengJie        万圣节活动
+YunYingxuqiu_zadan 韦小宝箱子
+
+以下文件在scp/Lua/Battle
+CycTask            文件夹里面是勇士任务
+CastteBette        城战脚本
+FangShouFuBe       防守副本修改
+guajidibiao        挂机系统？里面有沙暴的沙虫脚本？
+JingJiChang        竞技场修改
+LaJuZhanFuBen      拉锯战脚本
+LingHunShi         灵魂石修改就是熊蛋塔夫蛋
+Medal              勋章抽奖奖励修改，就是拉锯结束后送的勋章
+Relive             复活限制？
+ShiLianKongJian    试练空间修改
+TaFangFuBen        塔防副本脚本
+ybt_zyzz           资源战脚本？
+yijicity           天空城修改
+yijicity_bushuaxin 同上
+yijicity_table     同上
+ZJGJ               雪域宝箱争夺？
+ZJGJ_DennisGoods   雪域怪物掉落？
+
+以下文件在scp/Lua/Book
+LoopSpace          文件里面是副本三环修改
+
+以下文件在scp/Lua/house
+
+这个文件夹里面应该是庄园一系列的修改脚本
+
+以下文件在scp/Lua/MercGroup
+MercGroupKernel     这个文件里面是兵团修改的脚本具体有啥没看
+MercGroupTask       这个是团任务
+
+以下文件在scp/Lua/NPC
+CreateNPC           NPC坐标 删除 添加NPC
+CreateNPC_bak       同上
+CreateNPC_dd        同上
+Marriage            结婚脚本？
+NPCDialog           与NPC对话修改
+
+以下文件在scp/Lua/Other
+BaoXiang            宝箱物品修改
+BaoXiangZhengDuo 1 2活动宝箱争夺掉落物品修改
+BossJia0-7          BOSS之家修改
+BTfuwen             变态符文修改
+BuJiXiang           补给箱物品修改
+ChengHaokaPian      称号脚本
+ChunnelVerdict      传送门进入等级修改
+DianQuanHuanJinBi   界面右上广告
+EGuiDeDiXue         恶鬼地穴脚本
+FreeUpdate          玩家升级到多少级免费升级技能
+FuWenXiTong         符文修改
+Fuzhangbaoshixiangqian 时装宝石脚本
+GongJiaoChe_ZiDongXunLu公交车脚本？
+GooodsPackage       礼包物品 更改
+JieHun              结婚脚本
+魔法宝箱，火药，战士 对应三系军备箱
+PeerageLevelup      等级限制 升级条件
+QianDao             签到NPC兑换表
+QQTeQuan            QQ特权头衔修改
+SellItem            装备制作时间修改？
+SellShiZhuang       云游商人脚本
+ShengDanYuanDan     圣诞活动
+SuiJiDoor           随机巨人们脚本？
+TaFuDeKuangJing     塔夫矿井脚本？
+Teacher             师徒脚本
+TowerofHeroes       英雄塔脚本
+WorldMonster        BOSS小BOSS精英掉落表
+WorldSpaceTimeForDoor 也是随机门？
+XiongDiHui          兄弟会脚本 同名的 一样是
+YunYing_QiXiHuanJing 七夕副本活动脚本
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
